@@ -23,6 +23,7 @@ collections:
       - { label: "Photo", name: "photo", widget: "image", required: false, hint: "Upload a headshot to images/team/" }
       - { label: "PubMed Name", name: "pubmed_name", widget: "string", required: false, hint: "Your PubMed author name (e.g. Smith JA)" }
       - { label: "Google Scholar URL", name: "google_scholar", widget: "string", required: false }
+      - { label: "Personal Website", name: "website", widget: "string", required: false, hint: "URL to personal website (e.g. https://example.github.io/)" }
       - { label: "Page Title", name: "title", widget: "string" }
       - { label: "Page Description", name: "description", widget: "string" }
       - { label: "Bio", name: "body", widget: "markdown" }

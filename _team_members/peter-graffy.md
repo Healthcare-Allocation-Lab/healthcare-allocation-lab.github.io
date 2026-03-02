@@ -5,6 +5,7 @@ slug: peter-graffy
 photo: images/team/peter-graffy.jpg
 pubmed_name: Graffy PM
 google_scholar: https://scholar.google.com/citations?user=p9yiDrkAAAAJ&hl=en
+website: https://petergraffy.github.io/
 title: Peter Graffy | Parker Healthcare Allocation Lab
 description: Profile of Peter Graffy at the Parker HCA Lab.
 ---
