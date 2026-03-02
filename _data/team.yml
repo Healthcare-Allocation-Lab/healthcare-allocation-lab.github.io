@@ -46,6 +46,12 @@ collaborators:
     photo: "images/team/rachel-baccile.jpg"
 
 postdocs:
+  - name: "Shan Guleria, MD"
+    role: "Pulmonary and Critical Care Fellow, University of Chicago"
+    description: "Applying AI to improve critical care outcomes."
+    slug: "shan-guleria"
+    photo: "images/team/shan-guleria.jpeg"
+
   - name: "Peter Graffy, PhD"
     role: "Post-doctoral Fellow"
     description: "Population health epidemiologist specializing in exposome and health data linkage."
