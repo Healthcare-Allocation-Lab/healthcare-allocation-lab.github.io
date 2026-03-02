@@ -671,6 +671,32 @@ img { max-width: 100%; height: auto; display: block; }
   font-size: 0.82rem;
 }
 
+.research-details {
+  margin-top: 20px;
+}
+.research-details summary {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--maroon);
+  cursor: pointer;
+  padding: 8px 0;
+  list-style: none;
+}
+.research-details summary::-webkit-details-marker { display: none; }
+.research-details summary::before {
+  content: "\25B6";
+  display: inline-block;
+  margin-right: 8px;
+  font-size: 0.7rem;
+  transition: transform 0.2s;
+}
+.research-details[open] summary::before {
+  transform: rotate(90deg);
+}
+.research-details p {
+  margin-top: 12px;
+}
+
 /* Legacy research sections (if any page still uses them) */
 .research-section {
   padding: 48px 0;
