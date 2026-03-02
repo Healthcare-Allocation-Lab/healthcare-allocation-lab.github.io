@@ -10,6 +10,8 @@ Static website for the Parker Healthcare Allocation (HCA) Lab at the University 
 - **Hosting**: GitHub Pages (free, automatic Jekyll build)
 - **Fonts**: System font stack (no external font loads)
 - **Plugins**: `jekyll-sitemap` (auto-generates sitemap.xml)
+- **CMS**: Decap CMS at `/admin/` with GitHub OAuth via Cloudflare Worker
+- **OAuth Proxy**: Cloudflare Worker at `https://hca-cms-oauth.wparker.workers.dev`
 
 ## File Structure
 ```
@@ -41,7 +43,14 @@ hca_lab_website/
 ├── images/                     # All images (logos, headshot, diagrams, funder logos)
 ├── robots.txt                  # Has Jekyll front matter so it gets processed
 ├── Gemfile                     # Ruby dependencies (jekyll + jekyll-sitemap)
-├── .gitignore                  # Excludes _site/, .jekyll-cache/, Gemfile.lock
+├── admin/
+│   ├── index.html              # Decap CMS entry point (loads from CDN)
+│   └── config.yml              # CMS config (backend, collections, fields)
+├── oauth-proxy/                # Cloudflare Worker for GitHub OAuth (excluded from Jekyll build)
+│   ├── src/index.js            # Worker code: /auth, /callback routes
+│   ├── wrangler.toml           # Cloudflare deployment config
+│   └── README.md               # Setup instructions
+├── .gitignore                  # Excludes _site/, .jekyll-cache/, Gemfile.lock, .wrangler/, references/
 ├── CLAUDE.md                   # This file
 └── references/                 # Private working docs — excluded from build via _config.yml
 ```
@@ -52,6 +61,14 @@ bundle install              # Install dependencies (first time)
 bundle exec jekyll serve    # Build + serve at http://localhost:4000
 bundle exec jekyll build    # Build to _site/ without serving
 ```
+
+## Deployment
+- **GitHub repo**: `Healthcare-Allocation-Lab/healthcare-allocation-lab.github.io`
+- **Branch**: `main` — pushes auto-deploy via GitHub Pages (legacy build)
+- **OAuth proxy**: Deployed on Cloudflare Workers (account: `wparker.workers.dev`)
+  - Secrets (`GITHUB_CLIENT_ID`, `GITHUB_CLIENT_SECRET`) stored as Cloudflare Worker secrets
+  - GitHub OAuth App: "Parker HCA Lab CMS" (in org developer settings)
+  - Deploy changes: `cd oauth-proxy && wrangler deploy`
 
 ## How to Edit Content
 
@@ -68,6 +85,7 @@ staff:
     role: "Data Scientist"
     description: "Optional description."  # omit if not needed
     slug: "new-person"                    # links card to /team/new-person/
+    photo: "images/team/new-person.jpg"   # optional — shows circular photo on team card
 ```
 2. Create a matching `_team_members/new-person.md` with front matter (`member_name`, `role`, `slug`, `title`, `description`) and bio as Markdown body. Optional fields: `photo`, `pmids` (list of PubMed IDs), `spotlights` (list of spotlight IDs from `_data/spotlights.yml`).
 
@@ -141,6 +159,9 @@ Sections alternate `class="section"` (white bg) and `class="section section-alt"
 | MyNCBI | `https://www.ncbi.nlm.nih.gov/myncbi/william.parker.3/bibliography/public/` |
 | X / Twitter | `https://x.com/WF_Parker` |
 | Bluesky | `https://bsky.app/profile/hcalab.bsky.social` |
+| OAuth Proxy | `https://hca-cms-oauth.wparker.workers.dev` |
+| Cloudflare Dashboard | `https://dash.cloudflare.com` (account: wparker.workers.dev) |
+| Decap CMS Admin | `https://healthcare-allocation-lab.github.io/admin/` |
 | CLIF site | `https://clif-icu.com/` |
 | Lab email | `healthallocate@bsd.uchicago.edu` |
 | PI email | `william.parker@bsd.uchicago.edu` |

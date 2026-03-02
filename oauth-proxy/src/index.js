@@ -60,19 +60,27 @@ async function handleCallback(url, env) {
     });
   }
 
-  // Render a page that sends the token back to the CMS popup opener and closes
+  // Render a page that uses the Decap CMS postMessage handshake protocol:
+  // 1. Popup sends "authorizing:github" to opener to announce readiness
+  // 2. CMS responds with "authorizing:github" back to popup
+  // 3. Popup receives confirmation and sends the token
+  const content = JSON.stringify({ token: data.access_token, provider: 'github' });
   const html = `<!DOCTYPE html>
 <html>
 <head><meta charset="utf-8"><title>Authorizing...</title></head>
 <body>
+<p>Authorizing with GitHub...</p>
 <script>
 (function() {
-  var token = ${JSON.stringify(data.access_token)};
-  var msg = 'authorization:github:success:' + token;
-  if (window.opener) {
-    window.opener.postMessage(msg, '${ALLOWED_ORIGIN}');
-  }
-  window.close();
+  window.addEventListener('message', function(e) {
+    if (e.data === 'authorizing:github') {
+      window.opener.postMessage(
+        'authorization:github:success:' + ${JSON.stringify(content)},
+        e.origin
+      );
+    }
+  });
+  window.opener.postMessage('authorizing:github', '*');
 })();
 </script>
 </body>
