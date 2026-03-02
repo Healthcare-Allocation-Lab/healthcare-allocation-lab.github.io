@@ -1,14 +1,20 @@
 {% if member.slug %}
 <a href="{{ '/team/' | append: member.slug | append: '/' | relative_url }}" class="member-card member-card-linked">
-  <h3>{{ member.name }}</h3>
-  <p class="role">{{ member.role }}</p>
-  {% if member.description %}<p>{{ member.description }}</p>{% endif %}
-  <span class="card-link">View profile</span>
+  {% if member.photo %}<img src="{{ member.photo | relative_url }}" alt="{{ member.name }}" class="member-card-photo">{% endif %}
+  <div class="member-card-info">
+    <h3>{{ member.name }}</h3>
+    <p class="role">{{ member.role }}</p>
+    {% if member.description %}<p>{{ member.description }}</p>{% endif %}
+    <span class="card-link">View profile</span>
+  </div>
 </a>
 {% else %}
 <div class="member-card">
-  <h3>{{ member.name }}</h3>
-  <p class="role">{{ member.role }}</p>
-  {% if member.description %}<p>{{ member.description }}</p>{% endif %}
+  {% if member.photo %}<img src="{{ member.photo | relative_url }}" alt="{{ member.name }}" class="member-card-photo">{% endif %}
+  <div class="member-card-info">
+    <h3>{{ member.name }}</h3>
+    <p class="role">{{ member.role }}</p>
+    {% if member.description %}<p>{{ member.description }}</p>{% endif %}
+  </div>
 </div>
 {% endif %}

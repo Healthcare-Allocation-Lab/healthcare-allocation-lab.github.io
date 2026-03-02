@@ -3,59 +3,71 @@ staff:
     role: "Lab Manager, MacLean Center for Clinical Medical Ethics Program Manager"
     description: "MA in Experimental (Social) Psychology from University of Tennessee, Knoxville."
     slug: "haley-beck"
+    photo: "images/team/haley-beck.jpg"
 
   - name: "Dema Palathingal, MS"
     role: "Technical Project Manager"
     description: "CLIF Consortium project management and coding."
     slug: "dema-palathingal"
+    photo: "images/team/dema-palathingal.jpg"
 
   - name: "Kaveri Chhikara, MS"
     role: "Data Scientist"
     description: "Working on R01 grant developing life support allocation algorithm for crisis ICU treatment."
     slug: "kaveri-chhikara"
+    photo: "images/team/kaveri-chhikara.jpg"
 
   - name: "Molly White, MS"
     role: "Data Scientist"
     description: "Organ allocation research and optimization. Previously at Beth Israel Deaconess Medical Center."
     slug: "molly-white"
+    photo: "images/team/molly-white.jpg"
 
   - name: 'Zewei "Whiskey" Liao, MS'
     role: "Data Scientist"
     description: "Started as intern in 2024. CLIF consortium coding and analysis."
     slug: "zewei-liao"
+    photo: "images/team/zewei-liao.jpg"
 
 collaborators:
   - name: "Nikhil Narang, MD"
     role: "Assistant Professor of Medicine, Cardiology, Advanced Heart Failure"
     slug: "nikhil-narang"
+    photo: "images/team/nikhil-narang.jpg"
 
   - name: "Monica Peek, MD, MPH"
     role: "Ellen H. Block Professor for Health Justice Medicine"
     slug: "monica-peek"
+    photo: "images/team/monica-peek.jpg"
 
   - name: "Rachel Baccile, MPP"
     role: "Senior Research Analyst, Center for Health and Social Sciences"
     slug: "rachel-baccile"
+    photo: "images/team/rachel-baccile.jpg"
 
 postdocs:
   - name: "Peter Graffy, PhD"
     role: "Post-doctoral Fellow"
     description: "Population health epidemiologist specializing in exposome and health data linkage."
     slug: "peter-graffy"
+    photo: "images/team/peter-graffy.jpg"
 
   - name: "Daniel Ahn, MD"
     role: "General Surgery Resident, Stanford University"
     slug: "daniel-ahn"
+    photo: "images/team/daniel-ahn.jpg"
 
   - name: "Hanna Vollbrecht, MD"
     role: "Pulmonary and Critical Care Fellow"
     description: "Research interests in critical/palliative care communication."
     slug: "hanna-vollbrecht"
+    photo: "images/team/hanna-vollbrecht.jpg"
 
 trainees:
   - name: "Daniel Johnson, BA"
     role: "Fourth Year Medical Student, Pritzker School of Medicine"
     slug: "daniel-johnson"
+    photo: "images/team/daniel-johnson.jpg"
 
   - name: "Alex Wang, BS"
     role: "Fourth Year Medical Student, Pritzker School of Medicine"
@@ -78,32 +90,39 @@ trainees:
     role: "Undergraduate Research Assistant, University of Illinois at Chicago"
     description: "Research on organ accept/reject practices."
     slug: "sukanya-ghosh"
+    photo: "images/team/sukanya-ghosh.jpg"
 
 alumni:
   - name: "Stratton Tolmie, MD"
     role: "Internal Medicine Resident, Columbia University"
     slug: "stratton-tolmie"
+    photo: "images/team/stratton-tolmie.jpg"
 
   - name: "Nour Asfour, MD"
     role: "General Surgery Resident, University of Chicago"
     slug: "nour-asfour"
+    photo: "images/team/nour-asfour.jpg"
 
   - name: "Jessica Lu, MD"
     role: "Surgery Resident, University of Wisconsin-Milwaukee"
     slug: "jessica-lu"
+    photo: "images/team/jessica-lu.jpg"
 
   - name: "Kevin Zhang, MS"
     role: "Former Data Scientist"
     description: "Biostatistics, University of Michigan."
     slug: "kevin-zhang"
+    photo: "images/team/kevin-zhang.jpg"
 
   - name: "Michael Hermsen, MD"
     role: "Internal Medicine Resident, University of Wisconsin"
     slug: "michael-hermsen"
+    photo: "images/team/michael-hermsen.jpg"
 
   - name: "Kevin Buell, MD"
     role: "Pulmonary and Critical Care Fellow, University of Chicago"
     slug: "kevin-buell"
+    photo: "images/team/kevin-buell.jpg"
 
   - name: "Andrew Arhebun"
     role: "Undergraduate Research Assistant, Beloit College"
@@ -116,14 +135,17 @@ alumni:
   - name: "Kevin Lazenby, MD"
     role: "General Surgery Resident, Washington University"
     slug: "kevin-lazenby"
+    photo: "images/team/kevin-lazenby.jpg"
 
   - name: 'Gege "Julia" Ran, MD'
     role: "Anesthesiology Resident, Stanford University"
     slug: "gege-ran"
+    photo: "images/team/gege-ran.jpg"
 
   - name: "Sharon Zeng, MD"
     role: "Anesthesiology Resident, Columbia University"
     slug: "sharon-zeng"
+    photo: "images/team/sharon-zeng.jpg"
 
   - name: "Edgar Aguila, BA"
     role: "Former PSOMER Undergraduate Research Assistant"
@@ -132,27 +154,34 @@ alumni:
   - name: "Kevin Chung, MD, MBA"
     role: "Internal Medicine Resident, Mayo Clinic Arizona"
     slug: "kevin-chung"
+    photo: "images/team/kevin-chung.jpg"
 
   - name: "Nicole Dussault, MD, MS"
     role: "Internal Medicine Resident, Duke University"
     slug: "nicole-dussault"
+    photo: "images/team/nicole-dussault.jpg"
 
   - name: "Maria Espinosa, MD"
     role: "Dermatology Resident, Henry Ford Health"
     slug: "maria-espinosa"
+    photo: "images/team/maria-espinosa.jpg"
 
   - name: "Sivasubramanium Bhavani, MD, MS"
     role: "Assistant Professor of Medicine, Emory University"
     slug: "siva-bhavani"
+    photo: "images/team/siva-bhavani.jpg"
 
   - name: 'Xuan "Susan" Han, MD, MS'
     role: "Assistant Professor of Medicine, Tufts University"
     slug: "susan-han"
+    photo: "images/team/susan-han.jpg"
 
   - name: "William Miller, MD, MS"
     role: "Assistant Professor of Medicine, University of South Florida"
     slug: "william-miller"
+    photo: "images/team/william-miller.jpg"
 
   - name: "Gina Piscitello, MD, MS"
     role: "Assistant Professor of Medicine, University of Pittsburgh"
     slug: "gina-piscitello"
+    photo: "images/team/gina-piscitello.png"
