@@ -63,6 +63,8 @@ bundle exec jekyll build    # Build to _site/ without serving
 ```
 
 ## Deployment
+- **Default workflow**: Commit and push to `main` after every change. The site is live — edits should deploy immediately. For minor cosmetic updates, commit and push without asking.
+- **Exception**: Use a local dev branch only if a change risks breaking the site (e.g., layout overhauls, JS refactors). Test locally with `bundle exec jekyll serve` before merging to `main`.
 - **GitHub repo**: `Healthcare-Allocation-Lab/healthcare-allocation-lab.github.io`
 - **Branch**: `main` — pushes auto-deploy via GitHub Pages (legacy build)
 - **OAuth proxy**: Deployed on Cloudflare Workers (account: `wparker.workers.dev`)
