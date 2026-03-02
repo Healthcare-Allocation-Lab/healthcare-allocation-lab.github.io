@@ -1,0 +1,79 @@
+---
+layout: page
+title: "Team | Parker Healthcare Allocation Lab | University of Chicago"
+description: "Meet the team of the Parker Healthcare Allocation Lab at the University of Chicago, led by Dr. William F. Parker, including staff, postdoctoral fellows, and trainees."
+canonical: "https://healthcare-allocation-lab.github.io/team.html"
+og_title: "Team | Parker Healthcare Allocation Lab | University of Chicago"
+og_description: "Meet the team of the Parker Healthcare Allocation Lab at the University of Chicago, led by Dr. William F. Parker, including staff, postdoctoral fellows, and trainees."
+twitter_title: "Team | Parker Healthcare Allocation Lab | University of Chicago"
+twitter_description: "Meet the team of the Parker Healthcare Allocation Lab at the University of Chicago, led by Dr. William F. Parker."
+heading: "Team"
+subtitle: "The people behind the Parker Healthcare Allocation Lab"
+permalink: /team.html
+---
+
+<div class="section">
+
+  <!-- Principal Investigator -->
+  <div class="pi-bio">
+    <img src="images/will_headshot.jpeg" alt="William F. Parker, MD, PhD" class="pi-bio-photo">
+    <div class="pi-bio-text">
+      <h2><a href="{{ '/team/william-parker/' | relative_url }}" style="color: inherit; text-decoration: none;">William F. Parker, MD, PhD</a></h2>
+      <p class="pi-title">Associate Professor of Pulmonary and Critical Care, Public Health Science<br>
+      Assistant Director, MacLean Center for Clinical Medical Ethics<br>
+      Founding Executive Director, CLIF Consortium</p>
+      <p>Dr. Parker is an intensivist, clinical medical ethicist, and health services researcher who leads the Parker Healthcare Allocation (HCA) Lab, an NIH-funded data science lab at the University of Chicago focused on the algorithmic allocation of scarce healthcare resources. He is specifically interested in absolute scarcity problems, where demand greatly exceeds supply, and healthcare systems cannot avoid rationing. He applies advanced empirical methods to evaluate and design allocation systems according to the underlying ethical principles.</p>
+      <p>His current projects focus on deceased donor organ allocation policy, life-support triage under crisis standards of care, and the allocation of novel scarce therapeutics. Dr. Parker is also the founding executive director of the Common Longitudinal ICU data Format (CLIF) consortium, a growing network of ICU data science labs that develop and utilize the open-source CLIF data standard to perform privacy-preserving federated ICU data science.</p>
+      <div class="pi-links">
+        <a href="https://scholar.google.com/citations?user=jaBF4DEAAAAJ&amp;hl=en" class="pi-link" target="_blank" rel="noopener">Google Scholar</a>
+        <a href="https://www.ncbi.nlm.nih.gov/myncbi/william.parker.3/bibliography/public/" class="pi-link" target="_blank" rel="noopener">MyNCBI</a>
+        <a href="https://x.com/WF_Parker" class="pi-link" target="_blank" rel="noopener">X / Twitter</a>
+        <a href="https://bsky.app/profile/hcalab.bsky.social" class="pi-link" target="_blank" rel="noopener">Bluesky</a>
+        <a href="https://github.com/Healthcare-Allocation-Lab" class="pi-link" target="_blank" rel="noopener">GitHub</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Staff -->
+  <div class="team-category">
+    <h2>Staff</h2>
+    <div class="team-grid">
+      {% for member in site.data.team.staff %}
+        {% include member_card.html member=member %}
+      {% endfor %}
+    </div>
+  </div>
+
+  <!-- Post-doctoral Fellows -->
+  <div class="team-category">
+    <h2>Post-doctoral Fellows</h2>
+    <div class="team-grid">
+      {% for member in site.data.team.postdocs %}
+        {% include member_card.html member=member %}
+      {% endfor %}
+    </div>
+  </div>
+
+  <!-- Trainees -->
+  <div class="team-category">
+    <h2>Trainees</h2>
+    <div class="team-grid">
+      {% for member in site.data.team.trainees %}
+        {% include member_card.html member=member %}
+      {% endfor %}
+    </div>
+  </div>
+
+  <!-- Alumni -->
+  <div class="team-category">
+    <button class="alumni-toggle" aria-expanded="false">
+      <span class="arrow">&#9654;</span> Alumni
+    </button>
+    <div class="alumni-list team-grid">
+      {% for member in site.data.team.alumni %}
+        {% include member_card.html member=member %}
+      {% endfor %}
+    </div>
+  </div>
+
+</div>

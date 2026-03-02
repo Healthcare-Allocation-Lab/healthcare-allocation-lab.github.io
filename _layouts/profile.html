@@ -1,0 +1,76 @@
+---
+layout: default
+---
+
+<header class="page-header">
+  <h1>{{ page.member_name }}</h1>
+  <p>{{ page.role }}</p>
+</header>
+
+<main>
+  <div class="container">
+    <div class="section">
+
+      <a href="{{ '/team.html' | relative_url }}" class="back-to-team">&larr; Back to Team</a>
+
+      <!-- Bio section -->
+      <div class="profile-bio-section">
+        {% if page.photo %}
+        <img src="{{ page.photo | relative_url }}" alt="{{ page.member_name }}" class="profile-photo">
+        {% endif %}
+        <div class="profile-bio">
+          {{ content }}
+          {% if page.google_scholar %}
+          <p style="margin-top: 16px;"><a href="{{ page.google_scholar }}" target="_blank" rel="noopener" class="scholar-link"><svg viewBox="0 0 24 24" width="16" height="16" style="vertical-align: middle; margin-right: 4px; fill: var(--maroon);"><path d="M5.242 13.769L0 9.5 12 0l12 9.5-5.242 4.269C17.548 11.249 14.978 9.5 12 9.5c-2.977 0-5.548 1.748-6.758 4.269zM12 10a7 7 0 1 0 0 14 7 7 0 0 0 0-14z"/></svg>Google Scholar Profile</a></p>
+          {% endif %}
+        </div>
+      </div>
+
+      <!-- Publications (fetched from PubMed) -->
+      {% if page.pubmed_name %}
+      <div class="profile-section">
+        {% if page.slug == "william-parker" %}
+        <h2>Publications</h2>
+        <div id="member-pubs" data-pubmed-name="{{ page.pubmed_name }}">
+          <p class="pubmed-loading">Loading publications&hellip;</p>
+        </div>
+        {% else %}
+        <h2>Lab Publications</h2>
+        <div id="member-pubs" data-pubmed-name="{{ page.pubmed_name }}">
+          <p class="pubmed-loading">Loading publications&hellip;</p>
+        </div>
+        {% endif %}
+      </div>
+      {% endif %}
+
+      <!-- Research Spotlights -->
+      {% if page.spotlights and page.spotlights.size > 0 %}
+      <div class="profile-section">
+        <h2>Research Spotlights</h2>
+        <div class="spotlight-grid">
+          {% for spotlight_id in page.spotlights %}
+            {% assign spotlight = site.data.spotlights | where: "id", spotlight_id | first %}
+            {% if spotlight %}
+            <div class="spotlight-card">
+              {% if spotlight.image %}
+              <img src="{{ spotlight.image | relative_url }}" alt="{{ spotlight.title }}" class="spotlight-image">
+              {% endif %}
+              <div class="spotlight-content">
+                <h3>{{ spotlight.title }}</h3>
+                <p>{{ spotlight.abstract }}</p>
+                {% if spotlight.doi %}
+                <a href="https://doi.org/{{ spotlight.doi }}" class="spotlight-link" target="_blank" rel="noopener">View Publication &rarr;</a>
+                {% elsif spotlight.pmid %}
+                <a href="https://pubmed.ncbi.nlm.nih.gov/{{ spotlight.pmid }}/" class="spotlight-link" target="_blank" rel="noopener">View on PubMed &rarr;</a>
+                {% endif %}
+              </div>
+            </div>
+            {% endif %}
+          {% endfor %}
+        </div>
+      </div>
+      {% endif %}
+
+    </div>
+  </div>
+</main>

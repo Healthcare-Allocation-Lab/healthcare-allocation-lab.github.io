@@ -1,0 +1,158 @@
+staff:
+  - name: "Haley Beck, MA"
+    role: "Lab Manager, MacLean Center for Clinical Medical Ethics Program Manager"
+    description: "MA in Experimental (Social) Psychology from University of Tennessee, Knoxville."
+    slug: "haley-beck"
+
+  - name: "Dema Palathingal, MS"
+    role: "Technical Project Manager"
+    description: "CLIF Consortium project management and coding."
+    slug: "dema-palathingal"
+
+  - name: "Kaveri Chhikara, MS"
+    role: "Data Scientist"
+    description: "Working on R01 grant developing life support allocation algorithm for crisis ICU treatment."
+    slug: "kaveri-chhikara"
+
+  - name: "Molly White, MS"
+    role: "Data Scientist"
+    description: "Organ allocation research and optimization. Previously at Beth Israel Deaconess Medical Center."
+    slug: "molly-white"
+
+  - name: 'Zewei "Whiskey" Liao, MS'
+    role: "Data Scientist"
+    description: "Started as intern in 2024. CLIF consortium coding and analysis."
+    slug: "zewei-liao"
+
+collaborators:
+  - name: "Nikhil Narang, MD"
+    role: "Assistant Professor of Medicine, Cardiology, Advanced Heart Failure"
+    slug: "nikhil-narang"
+
+  - name: "Monica Peek, MD, MPH"
+    role: "Ellen H. Block Professor for Health Justice Medicine"
+    slug: "monica-peek"
+
+  - name: "Rachel Baccile, MPP"
+    role: "Senior Research Analyst, Center for Health and Social Sciences"
+    slug: "rachel-baccile"
+
+postdocs:
+  - name: "Peter Graffy, PhD"
+    role: "Post-doctoral Fellow"
+    description: "Population health epidemiologist specializing in exposome and health data linkage."
+    slug: "peter-graffy"
+
+  - name: "Daniel Ahn, MD"
+    role: "General Surgery Resident, Stanford University"
+    slug: "daniel-ahn"
+
+  - name: "Hanna Vollbrecht, MD"
+    role: "Pulmonary and Critical Care Fellow"
+    description: "Research interests in critical/palliative care communication."
+    slug: "hanna-vollbrecht"
+
+trainees:
+  - name: "Daniel Johnson, BA"
+    role: "Fourth Year Medical Student, Pritzker School of Medicine"
+    slug: "daniel-johnson"
+
+  - name: "Alex Wang, BS"
+    role: "Fourth Year Medical Student, Pritzker School of Medicine"
+    slug: "alex-wang"
+
+  - name: "Olivia Christensen, BS"
+    role: "Third Year Medical Student"
+    description: "Kidney transplant access research."
+    slug: "olivia-christensen"
+
+  - name: "Stanton Greenstone, BS"
+    role: "Third Year Medical Student, Pritzker School of Medicine"
+    slug: "stanton-greenstone"
+
+  - name: "Caleb Diaz, BS"
+    role: "Second Year Medical Student, Pritzker School of Medicine"
+    slug: "caleb-diaz"
+
+  - name: "Sukanya Ghosh"
+    role: "Undergraduate Research Assistant, University of Illinois at Chicago"
+    description: "Research on organ accept/reject practices."
+    slug: "sukanya-ghosh"
+
+alumni:
+  - name: "Stratton Tolmie, MD"
+    role: "Internal Medicine Resident, Columbia University"
+    slug: "stratton-tolmie"
+
+  - name: "Nour Asfour, MD"
+    role: "General Surgery Resident, University of Chicago"
+    slug: "nour-asfour"
+
+  - name: "Jessica Lu, MD"
+    role: "Surgery Resident, University of Wisconsin-Milwaukee"
+    slug: "jessica-lu"
+
+  - name: "Kevin Zhang, MS"
+    role: "Former Data Scientist"
+    description: "Biostatistics, University of Michigan."
+    slug: "kevin-zhang"
+
+  - name: "Michael Hermsen, MD"
+    role: "Internal Medicine Resident, University of Wisconsin"
+    slug: "michael-hermsen"
+
+  - name: "Kevin Buell, MD"
+    role: "Pulmonary and Critical Care Fellow, University of Chicago"
+    slug: "kevin-buell"
+
+  - name: "Andrew Arhebun"
+    role: "Undergraduate Research Assistant, Beloit College"
+    slug: "andrew-arhebun"
+
+  - name: "Ronan Barron"
+    role: "Undergraduate Research Assistant, Marquette University"
+    slug: "ronan-barron"
+
+  - name: "Kevin Lazenby, MD"
+    role: "General Surgery Resident, Washington University"
+    slug: "kevin-lazenby"
+
+  - name: 'Gege "Julia" Ran, MD'
+    role: "Anesthesiology Resident, Stanford University"
+    slug: "gege-ran"
+
+  - name: "Sharon Zeng, MD"
+    role: "Anesthesiology Resident, Columbia University"
+    slug: "sharon-zeng"
+
+  - name: "Edgar Aguila, BA"
+    role: "Former PSOMER Undergraduate Research Assistant"
+    slug: "edgar-aguila"
+
+  - name: "Kevin Chung, MD, MBA"
+    role: "Internal Medicine Resident, Mayo Clinic Arizona"
+    slug: "kevin-chung"
+
+  - name: "Nicole Dussault, MD, MS"
+    role: "Internal Medicine Resident, Duke University"
+    slug: "nicole-dussault"
+
+  - name: "Maria Espinosa, MD"
+    role: "Dermatology Resident, Henry Ford Health"
+    slug: "maria-espinosa"
+
+  - name: "Sivasubramanium Bhavani, MD, MS"
+    role: "Assistant Professor of Medicine, Emory University"
+    slug: "siva-bhavani"
+
+  - name: 'Xuan "Susan" Han, MD, MS'
+    role: "Assistant Professor of Medicine, Tufts University"
+    slug: "susan-han"
+
+  - name: "William Miller, MD, MS"
+    role: "Assistant Professor of Medicine, University of South Florida"
+    slug: "william-miller"
+
+  - name: "Gina Piscitello, MD, MS"
+    role: "Assistant Professor of Medicine, University of Pittsburgh"
+    slug: "gina-piscitello"

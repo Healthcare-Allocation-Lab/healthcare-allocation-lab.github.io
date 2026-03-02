@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ page.title }}</title>
+  <meta name="description" content="{{ page.description }}">
+  {% if page.keywords %}<meta name="keywords" content="{{ page.keywords }}">{% endif %}
+  <link rel="canonical" href="{{ page.canonical | default: page.url | absolute_url }}">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="{{ page.og_title | default: page.title }}">
+  <meta property="og:description" content="{{ page.og_description | default: page.description }}">
+  <meta property="og:type" content="{{ page.og_type | default: 'website' }}">
+  <meta property="og:url" content="{{ page.canonical | default: page.url | absolute_url }}">
+  <meta property="og:site_name" content="{{ page.og_site_name | default: 'Parker Healthcare Allocation Lab' }}">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="{{ page.twitter_title | default: page.og_title | default: page.title }}">
+  <meta name="twitter:description" content="{{ page.twitter_description | default: page.og_description | default: page.description }}">
+
+  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+
+  {% if page.structured_data %}
+  {% include structured_data.html %}
+  {% endif %}
+</head>
+<body>
+
+  {% include nav.html %}
+
+  {{ content }}
+
+  {% include footer.html %}
+
+  {% if site.data.api_keys.ncbi_api_key %}<script>var NCBI_API_KEY = "{{ site.data.api_keys.ncbi_api_key }}";</script>{% endif %}
+  <script src="{{ '/assets/js/main.js' | relative_url }}"></script>
+</body>
+</html>

@@ -1,0 +1,18 @@
+<nav class="site-nav" aria-label="Main navigation">
+  <div class="nav-inner">
+    <a href="{{ '/' | relative_url }}" class="nav-brand">
+      <img src="{{ '/images/lab_logo.png' | relative_url }}" alt="HCA Lab Logo">
+      Parker HCA Lab
+    </a>
+    <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links">
+      <li><a href="{{ '/' | relative_url }}"{% if page.url == '/' or page.url == '/index.html' %} class="active"{% endif %}>Home</a></li>
+      <li><a href="{{ '/research.html' | relative_url }}"{% if page.url == '/research.html' %} class="active"{% endif %}>Research</a></li>
+      <li><a href="{{ '/team.html' | relative_url }}"{% if page.url == '/team.html' or page.url contains '/team/' %} class="active"{% endif %}>Team</a></li>
+      <li><a href="{{ '/join.html' | relative_url }}"{% if page.url == '/join.html' %} class="active"{% endif %}>Join</a></li>
+      <li><a href="{{ '/contact.html' | relative_url }}"{% if page.url == '/contact.html' %} class="active"{% endif %}>Contact</a></li>
+    </ul>
+  </div>
+</nav>

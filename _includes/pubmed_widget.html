@@ -1,0 +1,21 @@
+<div class="pubmed-widget" id="pubmed-widget"{% if include.style %} style="{{ include.style }}"{% endif %}>
+  <h2 class="section-title">{{ include.title | default: "Publications" }}</h2>
+  <p{% if include.subtitle_style %} style="{{ include.subtitle_style }}"{% else %} class="section-subtitle"{% endif %}>Searchable list of lab publications from PubMed.</p>
+  <div class="pubmed-search">
+    <input type="text" id="pubmed-filter" placeholder="Filter by keyword, author, or journal...">
+    <select id="pubmed-year-filter">
+      <option value="">All years</option>
+    </select>
+  </div>
+  <div class="pubmed-count" id="pubmed-count"></div>
+  <div id="pubmed-results">
+    <div class="pubmed-loading">Loading publications from PubMed...</div>
+  </div>
+  <div class="pubmed-pagination" id="pubmed-pagination"></div>
+  <div style="margin-top:16px;">
+    <div class="pi-links" style="justify-content:flex-start;">
+      <a href="https://scholar.google.com/citations?user=jaBF4DEAAAAJ&amp;hl=en" class="pi-link" target="_blank" rel="noopener" style="color:var(--text); border-color:var(--border);">Google Scholar</a>
+      <a href="https://www.ncbi.nlm.nih.gov/myncbi/william.parker.3/bibliography/public/" class="pi-link" target="_blank" rel="noopener" style="color:var(--text); border-color:var(--border);">MyNCBI</a>
+    </div>
+  </div>
+</div>

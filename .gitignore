@@ -1,0 +1,11 @@
+_site/
+.jekyll-cache/
+.sass-cache/
+Gemfile.lock
+.DS_Store
+_data/api_keys.yml
+.Rhistory
+.claude/
+references/
+screenshots/
+.wrangler/

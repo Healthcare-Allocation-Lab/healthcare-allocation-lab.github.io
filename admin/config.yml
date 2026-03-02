@@ -1,0 +1,28 @@
+backend:
+  name: github
+  repo: Healthcare-Allocation-Lab/healthcare-allocation-lab.github.io
+  branch: main
+  base_url: https://hca-cms-oauth.wparker.workers.dev
+  auth_endpoint: /auth
+
+publish_mode: editorial_workflow
+
+media_folder: "images/team"
+public_folder: "images/team"
+
+collections:
+  - name: "team_members"
+    label: "Team Members"
+    folder: "_team_members"
+    create: false
+    slug: "{{slug}}"
+    fields:
+      - { label: "Name", name: "member_name", widget: "string" }
+      - { label: "Role", name: "role", widget: "string" }
+      - { label: "Slug", name: "slug", widget: "string", hint: "URL-friendly identifier (e.g. jane-doe). Do not change." }
+      - { label: "Photo", name: "photo", widget: "image", required: false, hint: "Upload a headshot to images/team/" }
+      - { label: "PubMed Name", name: "pubmed_name", widget: "string", required: false, hint: "Your PubMed author name (e.g. Smith JA)" }
+      - { label: "Google Scholar URL", name: "google_scholar", widget: "string", required: false }
+      - { label: "Page Title", name: "title", widget: "string" }
+      - { label: "Page Description", name: "description", widget: "string" }
+      - { label: "Bio", name: "body", widget: "markdown" }

@@ -1,0 +1,47 @@
+title: Parker Healthcare Allocation Lab
+description: >-
+  The Parker Healthcare Allocation (HCA) Lab at the University of Chicago,
+  led by Dr. William F. Parker, applies advanced empirical methods to evaluate
+  and design algorithms that allocate scarce healthcare resources.
+url: "https://healthcare-allocation-lab.github.io"
+baseurl: ""
+
+# Preserve .html extensions to match existing URLs
+permalink: pretty
+
+# Collections
+collections:
+  team_members:
+    output: true
+    permalink: /team/:slug/
+
+# Plugins
+plugins:
+  - jekyll-sitemap
+
+# Exclude from build
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - CLAUDE.md
+  - TEAM_EDITING_GUIDE.md
+  - .claude
+  - references
+  - node_modules
+  - vendor
+  - oauth-proxy
+
+# Default front matter
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: "default"
+      og_type: "website"
+      og_site_name: "Parker Healthcare Allocation Lab"
+  - scope:
+      path: ""
+      type: "team_members"
+    values:
+      layout: "profile"

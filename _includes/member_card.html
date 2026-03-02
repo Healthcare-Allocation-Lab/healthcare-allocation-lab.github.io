@@ -1,0 +1,14 @@
+{% if member.slug %}
+<a href="{{ '/team/' | append: member.slug | append: '/' | relative_url }}" class="member-card member-card-linked">
+  <h3>{{ member.name }}</h3>
+  <p class="role">{{ member.role }}</p>
+  {% if member.description %}<p>{{ member.description }}</p>{% endif %}
+  <span class="card-link">View profile</span>
+</a>
+{% else %}
+<div class="member-card">
+  <h3>{{ member.name }}</h3>
+  <p class="role">{{ member.role }}</p>
+  {% if member.description %}<p>{{ member.description }}</p>{% endif %}
+</div>
+{% endif %}

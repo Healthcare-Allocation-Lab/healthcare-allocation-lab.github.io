@@ -1,0 +1,6 @@
+---
+---
+User-agent: *
+Allow: /
+
+Sitemap: https://healthcare-allocation-lab.github.io/sitemap.xml
