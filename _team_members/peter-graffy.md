@@ -1,5 +1,5 @@
 ---
-member_name: Peter Graffy, PhD
+member_name: Peter Graffy, PhD, MPH
 role: Post-doctoral Fellow
 slug: peter-graffy
 photo: images/team/peter-graffy.jpg
