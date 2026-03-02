@@ -29,8 +29,8 @@ Include your CV, a brief description of your research interests, and any relevan
 
 The HCA Lab seeks MD or PhD post-doctoral fellows with training in healthcare data science, health policy, health services research, critical care medicine, transplantation, or medical ethics. Formal training opportunities include:
 
- 1. the Siegler Clinical Medical Ethics fellowship
- 2. formal coursework in the Public Health Sciences and throughout the University of Chicago as an at-large graduate student.
+ 1. The Siegler Clinical Medical Ethics fellowship
+ 2. Formal coursework in the Public Health Sciences and throughout the University of Chicago as an at-large graduate student
  3. T32 project development and grantwriting course
 
 Direct T32 training grant funding is also available for qualified applicants. Fellows will be expected to apply for F or K level awards in the first year of their fellowship. Compensation in the Biological Sciences Division follows the NIH NRSA Stipend scale. Additional information on benefits and being a postdoc in the University of Chicago Biological Sciences Division can be found at [bsdpostdoc.uchicago.edu](https://bsdpostdoc.uchicago.edu). 

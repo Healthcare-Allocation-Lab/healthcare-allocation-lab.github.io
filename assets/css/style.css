@@ -801,6 +801,7 @@ img { max-width: 100%; height: auto; display: block; }
   height: 64px;
   border-radius: 50%;
   object-fit: cover;
+  object-position: top;
   flex-shrink: 0;
 }
 .member-card-info { min-width: 0; }
