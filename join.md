@@ -12,6 +12,8 @@ subtitle: "Opportunities to contribute to healthcare allocation research"
 permalink: /join.html
 ---
 
+<img src="images/team_at_ISHLT.jpg" alt="Parker HCA Lab members at the ISHLT 2024 conference in Prague" style="width:100%; border-radius:8px; margin-bottom:32px;">
+
 <div class="content-block" markdown="1">
 
 
