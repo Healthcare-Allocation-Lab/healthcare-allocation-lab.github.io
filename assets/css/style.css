@@ -350,6 +350,46 @@ img { max-width: 100%; height: auto; display: block; }
   border-radius: var(--radius);
 }
 
+/* --- Journal Logo Carousel --- */
+.journal-carousel {
+  overflow: hidden;
+  padding: 24px 0;
+  margin-bottom: 32px;
+  -webkit-mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+  mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+}
+
+.journal-track {
+  display: flex;
+  align-items: center;
+  gap: 56px;
+  width: max-content;
+  animation: journal-scroll 35s linear infinite;
+}
+
+.journal-track:hover {
+  animation-play-state: paused;
+}
+
+.journal-track img {
+  height: 50px;
+  width: auto;
+  opacity: 0.6;
+  transition: opacity 0.3s;
+  flex-shrink: 0;
+  filter: grayscale(100%);
+}
+
+.journal-track img:hover {
+  opacity: 1;
+  filter: grayscale(0%);
+}
+
+@keyframes journal-scroll {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
 /* --- Research Banner Image --- */
 .research-banner {
   width: 100%;
@@ -1042,6 +1082,9 @@ a.member-card-linked .card-link::after { content: " \2192"; }
 }
 
 @media (max-width: 768px) {
+  .journal-track img { height: 36px; }
+  .journal-track { gap: 40px; }
+
   .nav-toggle { display: block; }
 
   .nav-links {
