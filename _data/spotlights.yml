@@ -1,18 +1,22 @@
 spotlights:
-  - id: "heart-allocation-risk-score"
-    title: "Risk Score Predicting Death Without Transplant"
-    image: "images/spotlights/heart-allocation-risk-score.png"
-    journal_logo: "images/journals/jama.svg"
-    abstract: "A new risk score for heart transplant candidates predicts mortality on the waiting list, improving allocation beyond the current priority-tier system."
-    citation: "Zhang KC, Narang N, et al. JAMA. 2024;331(3):237-247."
-    doi: "10.1001/jama.2023.27029"
+  - id: heart-allocation-risk-score
+    title: United States Candidate Risk Score (US-CRS) for Predicting Death Without
+      Transplant in Adult Heart Transplant Candidates
+    image: images/spotlights/us_crs_auroc.png
+    journal_logo: images/journals/jama.svg
+    abstract: A new risk score for heart transplant candidates predicts mortality on
+      the waiting list, improving allocation beyond the current priority-tier
+      system.
+    citation: Zhang KC, Narang N, et al. JAMA. 2024;331(3):237-247.
+    doi: 10.1001/jama.2023.27029
     pmid: "38170510"
-
-  - id: "clif-consortium"
-    title: "Common Longitudinal ICU Data Format (CLIF)"
-    image: "images/spotlights/clif-consortium.png"
-    journal_logo: "images/journals/icm_logo.jpeg"
-    abstract: "The CLIF consortium establishes a common data standard for ICU data science, enabling privacy-preserving federated research across multiple hospital systems."
-    citation: "Rojas JC, Lyons PG, et al. Intensive Care Med. 2025."
-    doi: "10.1007/s00134-025-07869-2"
+  - id: clif-consortium
+    title: Common Longitudinal ICU Data Format (CLIF)
+    image: images/spotlights/clif-consortium.png
+    journal_logo: images/journals/icm_logo.jpeg
+    abstract: The CLIF consortium establishes a common data standard for ICU data
+      science, enabling privacy-preserving federated research across multiple
+      hospital systems.
+    citation: Rojas JC, Lyons PG, et al. Intensive Care Med. 2025.
+    doi: 10.1007/s00134-025-07869-2
     pmid: "39108507"
