@@ -374,6 +374,7 @@ img { max-width: 100%; height: auto; display: block; }
 .journal-track img {
   height: 50px;
   width: auto;
+  object-fit: contain;
   opacity: 0.6;
   transition: opacity 0.3s;
   flex-shrink: 0;
