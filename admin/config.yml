@@ -42,8 +42,8 @@ collections:
             fields:
               - { label: "ID", name: "id", widget: "string", hint: "Unique identifier (e.g. heart-allocation-risk-score). Use lowercase with hyphens." }
               - { label: "Title", name: "title", widget: "string" }
-              - { label: "Key Figure Image", name: "image", widget: "image", media_folder: "images/spotlights", public_folder: "images/spotlights", hint: "Upload a key figure or diagram from the paper." }
-              - { label: "Journal Logo", name: "journal_logo", widget: "image", required: false, media_folder: "images/journals", public_folder: "images/journals", hint: "Upload the journal's logo." }
+              - { label: "Key Figure Image", name: "image", widget: "image", media_folder: "/images/spotlights", public_folder: "images/spotlights", hint: "Upload a key figure or diagram from the paper." }
+              - { label: "Journal Logo", name: "journal_logo", widget: "image", required: false, media_folder: "/images/journals", public_folder: "images/journals", hint: "Upload the journal's logo." }
               - { label: "Abstract", name: "abstract", widget: "text", hint: "A condensed 1-2 sentence summary of the paper." }
               - { label: "Citation", name: "citation", widget: "string", hint: "Short citation (e.g. Zhang KC, et al. JAMA. 2024;331(3):237-247.)" }
               - { label: "DOI", name: "doi", widget: "string", required: false, hint: "DOI without https://doi.org/ prefix (e.g. 10.1001/jama.2023.27029)" }
