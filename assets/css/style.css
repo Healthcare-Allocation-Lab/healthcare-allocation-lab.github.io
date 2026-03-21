@@ -1122,6 +1122,47 @@ img { max-width: 100%; height: auto; display: block; }
   font-style: italic;
 }
 
+/* --- Spotlight Lightbox --- */
+.spotlight-lightbox {
+  display: none;
+  position: fixed;
+  inset: 0;
+  z-index: 2000;
+  background: rgba(0, 0, 0, 0.85);
+  cursor: zoom-out;
+  align-items: center;
+  justify-content: center;
+}
+
+.spotlight-lightbox.open {
+  display: flex;
+}
+
+.spotlight-lightbox img {
+  max-width: 90vw;
+  max-height: 90vh;
+  object-fit: contain;
+  border-radius: var(--radius);
+  box-shadow: 0 8px 40px rgba(0, 0, 0, 0.4);
+}
+
+.spotlight-lightbox-close {
+  position: absolute;
+  top: 20px;
+  right: 28px;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 2rem;
+  cursor: pointer;
+  line-height: 1;
+  padding: 4px 12px;
+}
+
+.research-spotlight-image {
+  cursor: zoom-in;
+}
+
 /* Linked member cards on team page */
 a.member-card-linked {
   display: block;

@@ -35,6 +35,9 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   }
 
+  // Spotlight image lightbox
+  initSpotlightLightbox();
+
   // PubMed Publications Widget (homepage + research page)
   var widget = document.getElementById('pubmed-widget');
   if (widget) {
@@ -47,6 +50,44 @@ document.addEventListener('DOMContentLoaded', function () {
     initMemberPubSearch(memberPubs);
   }
 });
+
+// --- Spotlight Image Lightbox ---
+function initSpotlightLightbox() {
+  var images = document.querySelectorAll('.research-spotlight-image');
+  if (images.length === 0) return;
+
+  // Create lightbox element once
+  var lightbox = document.createElement('div');
+  lightbox.className = 'spotlight-lightbox';
+  lightbox.innerHTML = '<button class="spotlight-lightbox-close" aria-label="Close">&times;</button><img src="" alt="">';
+  document.body.appendChild(lightbox);
+
+  var lbImg = lightbox.querySelector('img');
+
+  function openLightbox(src, alt) {
+    lbImg.src = src;
+    lbImg.alt = alt;
+    lightbox.classList.add('open');
+  }
+
+  function closeLightbox() {
+    lightbox.classList.remove('open');
+  }
+
+  images.forEach(function (img) {
+    img.addEventListener('click', function (e) {
+      e.stopPropagation();
+      openLightbox(img.src, img.alt);
+    });
+  });
+
+  lightbox.addEventListener('click', closeLightbox);
+  lbImg.addEventListener('click', function (e) { e.stopPropagation(); closeLightbox(); });
+
+  document.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape' && lightbox.classList.contains('open')) closeLightbox();
+  });
+}
 
 // --- Shared: render a PubMed article as HTML list item ---
 function renderPubItem(a, uid) {
