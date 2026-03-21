@@ -372,8 +372,8 @@ img { max-width: 100%; height: auto; display: block; }
 }
 
 .journal-track img {
-  height: 40px;
-  max-width: 160px;
+  height: 55px;
+  max-width: 200px;
   object-fit: contain;
   opacity: 0.6;
   transition: opacity 0.3s;
@@ -1083,7 +1083,7 @@ a.member-card-linked .card-link::after { content: " \2192"; }
 }
 
 @media (max-width: 768px) {
-  .journal-track img { height: 30px; max-width: 120px; }
+  .journal-track img { height: 40px; max-width: 150px; }
   .journal-track { gap: 40px; }
 
   .nav-toggle { display: block; }
