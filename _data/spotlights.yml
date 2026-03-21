@@ -12,7 +12,7 @@ spotlights:
     pmid: "38170510"
   - id: clif-consortium
     title: Common Longitudinal ICU Data Format (CLIF)
-    image: images/spotlights/clif-consortium.png
+    image: images/spotlights/clif_map.png
     journal_logo: images/journals/icm_logo.jpeg
     abstract: The CLIF consortium establishes a common data standard for ICU data
       science, enabling privacy-preserving federated research across multiple
