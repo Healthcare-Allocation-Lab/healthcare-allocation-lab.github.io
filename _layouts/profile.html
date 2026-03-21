@@ -56,7 +56,7 @@ layout: default
         <h2>Research Spotlights</h2>
         <div class="spotlight-grid">
           {% for spotlight_id in page.spotlights %}
-            {% assign spotlight = site.data.spotlights | where: "id", spotlight_id | first %}
+            {% assign spotlight = site.data.spotlights.spotlights | where: "id", spotlight_id | first %}
             {% if spotlight %}
             <div class="spotlight-card">
               {% if spotlight.image %}

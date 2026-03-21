@@ -94,6 +94,39 @@ permalink: /research.html
 
   </div>
 
+  <!-- Research Spotlights -->
+  {% if site.data.spotlights.spotlights.size > 0 %}
+  <div class="research-spotlight-section">
+    <h2 class="section-title" style="text-align:center;">Research Spotlights</h2>
+    <p class="section-subtitle" style="text-align:center;">Featured publications from the lab</p>
+    <div class="research-spotlight-grid">
+      {% for spotlight in site.data.spotlights.spotlights limit:3 %}
+      <div class="research-spotlight-card">
+        {% if spotlight.image %}
+        <img src="{{ spotlight.image | relative_url }}" alt="{{ spotlight.title }}" class="research-spotlight-image">
+        {% endif %}
+        <div class="research-spotlight-content">
+          {% if spotlight.journal_logo %}
+          <img src="{{ spotlight.journal_logo | relative_url }}" alt="Journal logo" class="research-spotlight-journal-logo">
+          {% endif %}
+          <h3>{{ spotlight.title }}</h3>
+          <p>{{ spotlight.abstract }}</p>
+          {% if spotlight.citation %}
+          <p class="research-spotlight-citation">
+            {% if spotlight.doi %}
+            <a href="https://doi.org/{{ spotlight.doi }}" target="_blank" rel="noopener">{{ spotlight.citation }}</a>
+            {% else %}
+            {{ spotlight.citation }}
+            {% endif %}
+          </p>
+          {% endif %}
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+  {% endif %}
+
   <h3 style="text-align:center; color:var(--dark-gray); margin-top:48px; margin-bottom:8px; font-weight:400;">Published in</h3>
   <div class="journal-carousel">
     <div class="journal-track">
