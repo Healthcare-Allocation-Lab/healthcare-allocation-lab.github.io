@@ -38,9 +38,11 @@ hca_lab_website/
 ├── join.md                     # Markdown recruitment page (layout: page)
 ├── contact.html                # Contact page content (layout: page)
 ├── assets/
-│   ├── css/style.css           # Single stylesheet (~920 lines)
-│   └── js/main.js              # Mobile nav, alumni collapse, PubMed widget (~210 lines)
-├── images/                     # All images (logos, headshot, diagrams, funder logos)
+│   ├── css/style.css           # Single stylesheet (~1260 lines)
+│   └── js/main.js              # Mobile nav, alumni collapse, PubMed widget, lightbox (~390 lines)
+├── images/                     # All images (logos, headshots, diagrams, funder logos)
+│   ├── journals/               # Journal logos for carousel and spotlight cards (trimmed of whitespace)
+│   └── spotlights/             # Research spotlight figure images
 ├── robots.txt                  # Has Jekyll front matter so it gets processed
 ├── Gemfile                     # Ruby dependencies (jekyll + jekyll-sitemap)
 ├── admin/
@@ -136,6 +138,17 @@ Shared via `{% include pubmed_widget.html %}`. Accepts optional parameters:
 - `title` (default: "Publications")
 - `style` (inline styles on container)
 - `subtitle_style` (inline styles on subtitle)
+
+### Journal logo carousel
+- Scrolling carousel on the research page showing journal logos
+- Logos are in `images/journals/` — raster images should be trimmed of whitespace for consistent sizing
+- CSS uses fixed `width: 140px` (100px on mobile) with `object-fit: contain` so all logos occupy equal visual slots
+- Track is duplicated in HTML for seamless infinite scroll animation
+
+### Spotlight lightbox
+- Clicking a research spotlight figure image opens a full-screen lightbox overlay
+- Implemented via `.spotlight-lightbox` in CSS and click handlers in `main.js`
+- Images use `cursor: zoom-in` to indicate clickability
 
 ### Section alternation
 Sections alternate `class="section"` (white bg) and `class="section section-alt"` (off-white bg).
