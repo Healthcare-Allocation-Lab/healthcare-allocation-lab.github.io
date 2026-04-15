@@ -5,7 +5,153 @@ function pubmedApiParam() {
   return (typeof NCBI_API_KEY !== 'undefined' && NCBI_API_KEY) ? '&api_key=' + NCBI_API_KEY : '';
 }
 
+// --- GitHub Auth (Lab Resources) ---
+var AUTH_PROXY = 'https://hca-cms-oauth.wparker.workers.dev';
+var AUTH_KEYS = {
+  token: 'hca_github_token',
+  username: 'hca_github_username',
+  avatar: 'hca_github_avatar'
+};
+
+function getAuthState() {
+  var token = localStorage.getItem(AUTH_KEYS.token);
+  if (!token) return null;
+  return {
+    token: token,
+    username: localStorage.getItem(AUTH_KEYS.username) || '',
+    avatar: localStorage.getItem(AUTH_KEYS.avatar) || ''
+  };
+}
+
+function setAuthState(token, username, avatar) {
+  localStorage.setItem(AUTH_KEYS.token, token);
+  localStorage.setItem(AUTH_KEYS.username, username);
+  localStorage.setItem(AUTH_KEYS.avatar, avatar);
+}
+
+function clearAuthState() {
+  localStorage.removeItem(AUTH_KEYS.token);
+  localStorage.removeItem(AUTH_KEYS.username);
+  localStorage.removeItem(AUTH_KEYS.avatar);
+}
+
+function loginRedirect() {
+  window.location.href = AUTH_PROXY + '/auth?site_login=true';
+}
+
+function initAuthUI() {
+  // Parse hash fragment on callback return (token comes in #auth_token=...&username=...&avatar=...)
+  if (window.location.hash && window.location.hash.indexOf('auth_token=') !== -1) {
+    var hashParams = new URLSearchParams(window.location.hash.substring(1));
+    var authToken = hashParams.get('auth_token');
+    var username = hashParams.get('username');
+    var avatar = hashParams.get('avatar');
+    if (authToken) {
+      setAuthState(authToken, username || '', avatar || '');
+      // Clear hash from URL without triggering navigation
+      history.replaceState(null, '', window.location.pathname + window.location.search);
+    }
+  }
+
+  // Parse query params for auth errors
+  var urlParams = new URLSearchParams(window.location.search);
+  var authError = urlParams.get('auth_error');
+  if (authError) {
+    var errorEl = document.getElementById('auth-error');
+    if (errorEl) {
+      var msg = 'Login failed.';
+      if (authError === 'not_member') {
+        msg = 'Access denied. You must be a member of the Healthcare-Allocation-Lab GitHub organization.';
+      } else if (authError === 'github_api') {
+        msg = 'Could not verify your GitHub account. Please try again.';
+      } else if (authError === 'server_error') {
+        msg = 'An unexpected error occurred. Please try again.';
+      }
+      errorEl.textContent = msg;
+      errorEl.style.display = 'block';
+    }
+    // Clean error from URL
+    history.replaceState(null, '', window.location.pathname);
+  }
+
+  var auth = getAuthState();
+  var loginBtn = document.getElementById('nav-login-btn');
+  var userMenu = document.getElementById('nav-user-menu');
+  var resourcesLink = document.getElementById('nav-resources-link');
+
+  if (auth) {
+    // Logged in
+    if (loginBtn) loginBtn.style.display = 'none';
+    if (userMenu) {
+      userMenu.style.display = 'flex';
+      var avatarImg = document.getElementById('nav-user-avatar');
+      var nameSpan = document.getElementById('nav-user-name');
+      if (avatarImg) avatarImg.src = auth.avatar;
+      if (nameSpan) nameSpan.textContent = auth.username;
+    }
+    if (resourcesLink) resourcesLink.style.display = '';
+
+    // Gate resources page content
+    var resourcesLogin = document.getElementById('resources-login');
+    var resourcesContent = document.getElementById('resources-content');
+    if (resourcesLogin) resourcesLogin.style.display = 'none';
+    if (resourcesContent) resourcesContent.style.display = '';
+
+    // Validate token on resources page
+    if (document.getElementById('resources-content')) {
+      validateToken(auth.token);
+    }
+  } else {
+    // Logged out
+    if (loginBtn) loginBtn.style.display = '';
+    if (userMenu) userMenu.style.display = 'none';
+    if (resourcesLink) resourcesLink.style.display = 'none';
+
+    // Gate resources page content
+    var resourcesLogin2 = document.getElementById('resources-login');
+    var resourcesContent2 = document.getElementById('resources-content');
+    if (resourcesLogin2) resourcesLogin2.style.display = '';
+    if (resourcesContent2) resourcesContent2.style.display = 'none';
+  }
+
+  // Bind login button
+  if (loginBtn) {
+    loginBtn.addEventListener('click', loginRedirect);
+  }
+
+  // Bind resources page login button
+  var resourcesLoginBtn = document.getElementById('resources-login-btn');
+  if (resourcesLoginBtn) {
+    resourcesLoginBtn.addEventListener('click', loginRedirect);
+  }
+
+  // Bind logout button
+  var logoutBtn = document.getElementById('nav-logout-btn');
+  if (logoutBtn) {
+    logoutBtn.addEventListener('click', function () {
+      clearAuthState();
+      window.location.reload();
+    });
+  }
+}
+
+function validateToken(token) {
+  fetch('https://api.github.com/user', {
+    headers: { Authorization: 'Bearer ' + token }
+  }).then(function (res) {
+    if (!res.ok) {
+      clearAuthState();
+      window.location.reload();
+    }
+  }).catch(function () {
+    // Network error — don't clear, user may be offline
+  });
+}
+
 document.addEventListener('DOMContentLoaded', function () {
+  // GitHub auth UI
+  initAuthUI();
+
   // Mobile nav toggle
   var toggle = document.querySelector('.nav-toggle');
   var links = document.querySelector('.nav-links');
