@@ -100,7 +100,7 @@ permalink: /research.html
     <h2 class="section-title" style="text-align:center;">Research Spotlights</h2>
     <p class="section-subtitle" style="text-align:center;">Featured publications from the lab</p>
     <div class="research-spotlight-grid">
-      {% for spotlight in site.data.spotlights.spotlights limit:3 %}
+      {% for spotlight in site.data.spotlights.spotlights %}
       <div class="research-spotlight-card">
         {% if spotlight.image %}
         <img src="{{ spotlight.image | relative_url }}" alt="{{ spotlight.title }}" class="research-spotlight-image">
