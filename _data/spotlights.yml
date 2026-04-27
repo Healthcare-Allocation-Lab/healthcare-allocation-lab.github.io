@@ -1,8 +1,8 @@
 spotlights:
-  - id: "pediatric-heart-status-exceptions-2026"
+ - id: "pediatric-heart-status-exceptions-2026"
     title: "Status Exceptions and Misalignment of Medical Urgency in U.S. Pediatric Heart Transplantation"
     image: "images/spotlights/pediatric_heart_status_exceptions.png"
-    journal_logo: "images/journals/jacc.svg"
+    journal_logo: "images/journals/JACC_logo.jpg"
     abstract: "Pediatric heart transplant status exceptions are frequently granted to candidates who are not at the highest risk of waitlist death, contributing to misalignment between assigned medical urgency and actual mortality risk. The findings highlight opportunities to refine pediatric heart allocation policy."
     citation: "Ahn DJ, Attia A, et al. J Am Coll Cardiol. 2026."
     doi: "10.1016/j.jacc.2026.01.052"
