@@ -1,5 +1,5 @@
 spotlights:
- - id: "pediatric-heart-status-exceptions-2026"
+  - id: "pediatric-heart-status-exceptions-2026"
     title: "Status Exceptions and Misalignment of Medical Urgency in U.S. Pediatric Heart Transplantation"
     image: "images/spotlights/pediatric_heart_status_exceptions.png"
     journal_logo: "images/journals/JACC_logo.jpg"
