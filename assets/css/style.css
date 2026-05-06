@@ -556,7 +556,7 @@ img { max-width: 100%; height: auto; display: block; }
 /* --- GitHub Org Panels --- */
 .github-panels {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(3, 1fr);
   gap: 24px;
 }
 .github-panel {
