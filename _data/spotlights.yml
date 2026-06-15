@@ -10,6 +10,17 @@ spotlights:
     for the ICU.
   citation: Vollbrecht H, Iwashyna TJ, et al. JAMA. 2026.
   doi: 10.1001/jama.2026.8659
+- id: lvad-utilization-selection-bias
+  title: 'Artifactual Declines in Durable LVAD Utilization Among Heart Transplant
+    Candidates: Selection Bias in Transplant Registries'
+  image: images/spotlights/lvad_selection_bias.png
+  journal_logo: images/journals/jhlt.svg
+  abstract: The STAR MCS file excludes LVADs among currently listed candidates, producing
+    artifactual declines in LVAD prevalence and incidence and inflated waitlist outcomes.
+    Awareness of registry construction is essential for accurate interpretation of
+    LVAD-related outcomes.
+  citation: Ahn DJ, Lyden GR, et al. J Heart Lung Transplant. 2026.
+  doi: 10.1016/j.healun.2026.06.002
 - id: pediatric-heart-status-exceptions-2026
   title: Status Exceptions and Misalignment of Medical Urgency in U.S. Pediatric Heart
     Transplantation
@@ -21,18 +32,6 @@ spotlights:
     highlight opportunities to refine pediatric heart allocation policy.
   citation: Ahn DJ, Attia A, et al. J Am Coll Cardiol. 2026.
   doi: 10.1016/j.jacc.2026.01.052
-- id: lvad-utilization-selection-bias
-  title: 'Artifactual Declines in Durable LVAD Utilization Among Heart Transplant
-    Candidates: Selection Bias in Transplant Registries'
-  image: images/spotlights/lvad_selection_bias.png
-  journal_logo: images/journals/jhlt.svg
-  abstract: Apparent declines in durable LVAD use among heart transplant candidates
-    are partly an artifact of selection bias in transplant registries, which capture
-    LVAD recipients only once they are listed for transplant. Comparing the SRTR and
-    STAR mechanical circulatory support files shows how this bias distorts estimates
-    of transplant and death or deterioration after LVAD implantation.
-  citation: Ahn DJ, Lyden GR, et al. J Heart Lung Transplant. 2026.
-  doi: 10.1016/j.healun.2026.06.002
 - id: clif-consortium
   title: Common Longitudinal ICU Data Format (CLIF)
   image: images/spotlights/clif_map.png
