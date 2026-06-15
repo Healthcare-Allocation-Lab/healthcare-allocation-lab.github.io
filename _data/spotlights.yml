@@ -50,3 +50,14 @@ spotlights:
     citation: Parker WF, Anderson AS, et al. JAMA. 2019;322(18):1789-1798.
     doi: 10.1001/jama.2019.15686
     pmid: "31714985"
+  - id: slow-life-support
+    title: Slow Life Support for Imminently Dying Patients
+    image: images/spotlights/slow_life_support.png
+    journal_logo: images/journals/jama.svg
+    abstract: Slow life support describes a strategy in which clinicians withhold or
+      limit the intensity of life-sustaining therapies for imminently dying
+      patients when full withdrawal cannot be negotiated with families. This
+      Viewpoint defines and categorizes the practice and offers ethical analysis
+      and practical recommendations for the ICU.
+    citation: Vollbrecht H, Iwashyna TJ, et al. JAMA. 2026.
+    doi: 10.1001/jama.2026.8659
