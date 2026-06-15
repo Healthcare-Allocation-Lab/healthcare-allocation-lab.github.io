@@ -38,3 +38,15 @@ spotlights:
     citation: Rojas JC, Lyons PG, et al. Intensive Care Med. 2025.
     doi: 10.1007/s00134-025-07848-7
     pmid: "40080116"
+  - id: transplant-center-survival-benefit
+    title: Association of Transplant Center With Survival Benefit Among Adults
+      Undergoing Heart Transplant in the United States
+    image: images/spotlights/transplant_center_survival_benefit.png
+    journal_logo: images/journals/jama.svg
+    abstract: The 5-year survival benefit associated with heart transplant varied
+      across transplant centers, and high survival benefit centers performed
+      heart transplant for patients with lower estimated waiting list survival
+      without transplant.
+    citation: Parker WF, Anderson AS, et al. JAMA. 2019;322(18):1789-1798.
+    doi: 10.1001/jama.2019.15686
+    pmid: "31714985"
