@@ -1,63 +1,67 @@
 spotlights:
-  - id: "pediatric-heart-status-exceptions-2026"
-    title: "Status Exceptions and Misalignment of Medical Urgency in U.S. Pediatric Heart Transplantation"
-    image: "images/spotlights/pediatric_heart_status_exceptions.png"
-    journal_logo: "images/journals/JACC_logo.jpg"
-    abstract: "Pediatric heart transplant status exceptions are frequently granted to candidates who are not at the highest risk of waitlist death, contributing to misalignment between assigned medical urgency and actual mortality risk. The findings highlight opportunities to refine pediatric heart allocation policy."
-    citation: "Ahn DJ, Attia A, et al. J Am Coll Cardiol. 2026."
-    doi: "10.1016/j.jacc.2026.01.052"
-  - id: adi-heart-transplant-access
-    title: The Association of Place-Based Disadvantage and Access to Deceased Donor
-      Heart Transplantation
-    image: images/spotlights/adi_heart_transplant.png
-    journal_logo: images/journals/ajt.svg
-    abstract: Area deprivation index (ADI) was associated with heart transplantation
-      to a greater extent than other place-based disadvantage indices studied.
-      The forthcoming continuous distribution provides an opportunity to
-      incorporate ADI to address disparities in heart transplantation.
-    citation: Wang AZ, Barrett K, et al. Am J Transplant. 2025.
-    doi: 10.1016/j.ajt.2025.09.013
-  - id: heart-allocation-risk-score
-    title: United States Candidate Risk Score (US-CRS) for Predicting Death Without
-      Transplant in Adult Heart Transplant Candidates
-    image: images/spotlights/us_crs_auroc.png
-    journal_logo: images/journals/jama.svg
-    abstract: A new risk score for heart transplant candidates predicts mortality on
-      the waiting list, improving allocation beyond the current priority-tier
-      system.
-    citation: Zhang KC, Narang N, et al. JAMA. 2024;331(3):237-247.
-    doi: 10.1001/jama.2023.27029
-    pmid: "38170510"
-  - id: clif-consortium
-    title: Common Longitudinal ICU Data Format (CLIF)
-    image: images/spotlights/clif_map.png
-    journal_logo: images/journals/icm_logo.jpeg
-    abstract: The CLIF consortium establishes a common data standard for ICU data
-      science, enabling privacy-preserving federated research across multiple
-      hospital systems.
-    citation: Rojas JC, Lyons PG, et al. Intensive Care Med. 2025.
-    doi: 10.1007/s00134-025-07848-7
-    pmid: "40080116"
-  - id: transplant-center-survival-benefit
-    title: Association of Transplant Center With Survival Benefit Among Adults
-      Undergoing Heart Transplant in the United States
-    image: images/spotlights/transplant_center_survival_benefit.png
-    journal_logo: images/journals/jama.svg
-    abstract: The 5-year survival benefit associated with heart transplant varied
-      across transplant centers, and high survival benefit centers performed
-      heart transplant for patients with lower estimated waiting list survival
-      without transplant.
-    citation: Parker WF, Anderson AS, et al. JAMA. 2019;322(18):1789-1798.
-    doi: 10.1001/jama.2019.15686
-    pmid: "31714985"
-  - id: slow-life-support
-    title: Slow Life Support for Imminently Dying Patients
-    image: images/spotlights/slow_life_support.png
-    journal_logo: images/journals/jama.svg
-    abstract: Slow life support describes a strategy in which clinicians withhold or
-      limit the intensity of life-sustaining therapies for imminently dying
-      patients when full withdrawal cannot be negotiated with families. This
-      Viewpoint defines and categorizes the practice and offers ethical analysis
-      and practical recommendations for the ICU.
-    citation: Vollbrecht H, Iwashyna TJ, et al. JAMA. 2026.
-    doi: 10.1001/jama.2026.8659
+- id: slow-life-support
+  title: Slow Life Support for Imminently Dying Patients
+  image: images/spotlights/slow_life_support.png
+  journal_logo: images/journals/jama.svg
+  abstract: Slow life support describes a strategy in which clinicians withhold or
+    limit the intensity of life-sustaining therapies for imminently dying patients
+    when full withdrawal cannot be negotiated with families. This Viewpoint defines
+    and categorizes the practice and offers ethical analysis and practical recommendations
+    for the ICU.
+  citation: Vollbrecht H, Iwashyna TJ, et al. JAMA. 2026.
+  doi: 10.1001/jama.2026.8659
+- id: pediatric-heart-status-exceptions-2026
+  title: Status Exceptions and Misalignment of Medical Urgency in U.S. Pediatric Heart
+    Transplantation
+  image: images/spotlights/pediatric_heart_status_exceptions.png
+  journal_logo: images/journals/JACC_logo.jpg
+  abstract: Pediatric heart transplant status exceptions are frequently granted to
+    candidates who are not at the highest risk of waitlist death, contributing to
+    misalignment between assigned medical urgency and actual mortality risk. The findings
+    highlight opportunities to refine pediatric heart allocation policy.
+  citation: Ahn DJ, Attia A, et al. J Am Coll Cardiol. 2026.
+  doi: 10.1016/j.jacc.2026.01.052
+- id: adi-heart-transplant-access
+  title: The Association of Place-Based Disadvantage and Access to Deceased Donor
+    Heart Transplantation
+  image: images/spotlights/adi_heart_transplant.png
+  journal_logo: images/journals/ajt.svg
+  abstract: Area deprivation index (ADI) was associated with heart transplantation
+    to a greater extent than other place-based disadvantage indices studied. The forthcoming
+    continuous distribution provides an opportunity to incorporate ADI to address
+    disparities in heart transplantation.
+  citation: Wang AZ, Barrett K, et al. Am J Transplant. 2025.
+  doi: 10.1016/j.ajt.2025.09.013
+- id: clif-consortium
+  title: Common Longitudinal ICU Data Format (CLIF)
+  image: images/spotlights/clif_map.png
+  journal_logo: images/journals/icm_logo.jpeg
+  abstract: The CLIF consortium establishes a common data standard for ICU data science,
+    enabling privacy-preserving federated research across multiple hospital systems.
+  citation: Rojas JC, Lyons PG, et al. Intensive Care Med. 2025.
+  doi: 10.1007/s00134-025-07848-7
+  pmid: '40080116'
+  evergreen: true
+- id: heart-allocation-risk-score
+  title: United States Candidate Risk Score (US-CRS) for Predicting Death Without
+    Transplant in Adult Heart Transplant Candidates
+  image: images/spotlights/us_crs_auroc.png
+  journal_logo: images/journals/jama.svg
+  abstract: A new risk score for heart transplant candidates predicts mortality on
+    the waiting list, improving allocation beyond the current priority-tier system.
+  citation: Zhang KC, Narang N, et al. JAMA. 2024;331(3):237-247.
+  doi: 10.1001/jama.2023.27029
+  pmid: '38170510'
+  evergreen: true
+- id: transplant-center-survival-benefit
+  title: Association of Transplant Center With Survival Benefit Among Adults Undergoing
+    Heart Transplant in the United States
+  image: images/spotlights/transplant_center_survival_benefit.png
+  journal_logo: images/journals/jama.svg
+  abstract: The 5-year survival benefit associated with heart transplant varied across
+    transplant centers, and high survival benefit centers performed heart transplant
+    for patients with lower estimated waiting list survival without transplant.
+  citation: Parker WF, Anderson AS, et al. JAMA. 2019;322(18):1789-1798.
+  doi: 10.1001/jama.2019.15686
+  pmid: '31714985'
+  evergreen: true
