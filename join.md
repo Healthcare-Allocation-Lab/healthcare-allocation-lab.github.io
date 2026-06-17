@@ -16,26 +16,19 @@ permalink: /join.html
 
 <div class="content-block" markdown="1">
 
+## Opportunities
 
-## How to Apply
-
-Dr. Parker and the HCA lab welcome applications from interested students or post-doctoral fellows on a rolling basis. To express interest, please email:
-
-- **William F. Parker, MD, PhD** --- [william.parker@bsd.uchicago.edu](mailto:william.parker@bsd.uchicago.edu)
-- **Haley Beck, MA** (Lab Manager) --- [haley.beck@bsd.uchicago.edu](mailto:haley.beck@bsd.uchicago.edu)
-
-Include your CV, a brief description of your research interests, and any relevant experience.
-
+Dr. Parker and the HCA lab welcome applications from interested students or post-doctoral fellows on a rolling basis. See our available roles and opportunities below.
 
 ## Post-doctoral fellowship positions
 
 The HCA Lab seeks MD or PhD post-doctoral fellows with training in healthcare data science, health policy, health services research, critical care medicine, transplantation, or medical ethics. Formal training opportunities include:
 
- 1. The Siegler Clinical Medical Ethics fellowship
- 2. Formal coursework in the Public Health Sciences and throughout the University of Chicago as an at-large graduate student
- 3. T32 project development and grantwriting course
+1. The Siegler Clinical Medical Ethics fellowship
+2. Formal coursework in the Public Health Sciences and throughout the University of Chicago as an at-large graduate student
+3. T32 project development and grantwriting course
 
-Direct T32 training grant funding is also available for qualified applicants. Fellows will be expected to apply for F or K level awards in the first year of their fellowship. Compensation in the Biological Sciences Division follows the NIH NRSA Stipend scale. Additional information on benefits and being a postdoc in the University of Chicago Biological Sciences Division can be found at [bsdpostdoc.uchicago.edu](https://bsdpostdoc.uchicago.edu). 
+Direct T32 training grant funding is also available for qualified applicants. Fellows will be expected to apply for F or K level awards in the first year of their fellowship. Compensation in the Biological Sciences Division follows the NIH NRSA Stipend scale. Additional information on benefits and being a postdoc in the University of Chicago Biological Sciences Division can be found at [bsdpostdoc.uchicago.edu](https://bsdpostdoc.uchicago.edu).
 
 ### CLIF post-doctoral fellowship
 We are seeking a postdoctoral researcher to work on carrying out data science research studies for the Common Longitudinal ICU data Format (CLIF) consortium. CLIF is a common data format for privacy-preserving federated critical care research developed by the CLIF consortium. The consortium is comprised of critical care clinicians and data scientists from 12 health systems who work collaboratively to execute a wide range of observational critical care electronic health record (EHR) studies, including Dr. William F. Parker’s R01 projects on crisis standards of care and organ allocation. However, CLIF post-doctoral fellows will be free to pursue any high impact question they are interested in using CLIF.
@@ -43,9 +36,18 @@ We are seeking a postdoctoral researcher to work on carrying out data science re
 ### Organ allocation post-doctoral fellowship
 The HCA lab is seeking post-doctoral fellows with a specific focus on designing and evaluating organ allocation policy. Applicants from broad backgrounds (e.g. clinical transplantation fellows, health services research PhDs) are encouraged to apply. Data sources will include national transplant registries (SRTR and OPTN data) as well as emerging real-world EHR data sources.
 
+To express interest, please email:
+
+- **William F. Parker, MD, PhD** --- [william.parker@bsd.uchicago.edu](mailto:william.parker@bsd.uchicago.edu)
+- **Haley Beck, MA** (Lab Manager) --- [haley.beck@bsd.uchicago.edu](mailto:haley.beck@bsd.uchicago.edu)
+
+Include your CV, a brief description of your research interests, and any relevant experience.
+
 ## Undergraduate or Medical Student Research Rotation
 
 We welcome undergraduate and medical students seeking experience in biostatistical research, particularly regarding organ allocation and healthcare resource distribution. Students in the lab conduct analysis of patient health data, create data visualizations, and co-author conference presentations and manuscripts.
+
+Dr. Parker is a participating research mentor in the following programs: Pritzker's Summer Research Program (SRP), the Biological Sciences Collegiate Division (BSCD) Summer Fellowship, and the Pritzker School of Medicine Experience in Research (PSOMER) program. Students in these formal programs will receive priority for our limited Research Assistantship slots in the lab, but others may apply individually via our application below. Compensation at the rate of minimum wage for up to 20 hours/week is available when grant funding allows.
 
 ### What You'll Do
 
@@ -64,4 +66,31 @@ We welcome undergraduate and medical students seeking experience in biostatistic
 
 The lab has a strong track record of publishing work first-authored by medical students and preparing them for competitive residency programs. Successful participants develop advanced biostatistics skills, gain experience with real-world transplant and critical care datasets, and strengthen their academic portfolios. Undergraduates gain valuable experience in data science and have opportunities to contribute in co-author roles to manuscripts.
 
+### Apply
+
+To apply for an undergraduate or medical student research position, please complete our application form:
+
+<a href="https://docs.google.com/forms/d/e/1FAIpQLScKoJ2OD2Zmgb1EOzjzpmWUDbMLcwg7XAmuQfOTaiBxD3U1wg/viewform?usp=sharing&ouid=109524889013036937393" class="apply-btn" target="_blank" rel="noopener">Open the application form &rarr;</a>
+
+**In addition, please email your CV/résumé to both:**
+
+- **Haley Beck, MA** (Lab Manager) --- [haley.beck@bsd.uchicago.edu](mailto:haley.beck@bsd.uchicago.edu)
+- **William F. Parker, MD, PhD** --- [william.parker@bsd.uchicago.edu](mailto:william.parker@bsd.uchicago.edu)
+
 </div>
+
+<style>
+.apply-btn {
+  display: inline-block;
+  background: var(--maroon);
+  color: var(--white);
+  padding: 12px 28px;
+  border-radius: var(--radius);
+  font-weight: 600;
+  font-size: 0.95rem;
+  text-decoration: none;
+  margin: 8px 0 24px;
+  transition: background .2s;
+}
+.apply-btn:hover { background: var(--maroon-dark); color: var(--white); text-decoration: none; }
+</style>
