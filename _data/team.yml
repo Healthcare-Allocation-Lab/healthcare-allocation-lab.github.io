@@ -99,6 +99,11 @@ trainees:
     slug: "sukanya-ghosh"
     photo: "images/team/sukanya-ghosh.jpg"
 
+- name: "Jenny Hu"
+    role: "Summer Undergraduate Research Assistant, University of Chicago"
+    slug: "jenny-hu"
+    photo: "images/team/jenny-hu.jpg"
+
 alumni:
   - name: "Stratton Tolmie, MD"
     role: "Internal Medicine Resident, Columbia University"
