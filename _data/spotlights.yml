@@ -3,12 +3,9 @@ spotlights:
   title: Slow Life Support for Imminently Dying Patients
   image: images/spotlights/slow_life_support.png
   journal_logo: images/journals/jama.svg
-  abstract: Beyond communication, the boundaries of unilateral clinician authority
-    must be clarified when initial shared decision-making is unable to negotiate a
-    coherent life support plan. Informed assent, wherein clinicians explicitly disclose
-    a recommended treatment path and its best-case and worst-case potential outcomes
-    to patients or surrogates, may provide the most optimal balance of core ethical
-    principles.
+  abstract: 'This viewpoint introduces and explores the ethical implications of "slow
+    life support" - the selective and often undisclosed withholding or modulation of
+    life sustaining therapies by clinicians in imminently dying patients.'
   citation: Vollbrecht H, Iwashyna TJ, et al. JAMA. 2026.
   doi: 10.1001/jama.2026.8659
 - id: lvad-utilization-selection-bias
