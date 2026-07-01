@@ -104,6 +104,10 @@ trainees:
     slug: "jenny-hu"
     photo: "images/team/jenny-hu.jpg"
 
+  - name: "Christian Ramos"
+    role: "Summer Undergraduate Research Assistant, University of Chicago"
+    slug: "christian-ramos"
+
 alumni:
   - name: "Stratton Tolmie, MD"
     role: "Internal Medicine Resident, Columbia University"
