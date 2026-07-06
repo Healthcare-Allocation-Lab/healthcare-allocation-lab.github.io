@@ -70,16 +70,6 @@ postdocs:
     photo: "images/team/hanna-vollbrecht.jpg"
 
 trainees:
-  - name: "Daniel Johnson, BA"
-    role: "Fourth Year Medical Student, Pritzker School of Medicine"
-    slug: "daniel-johnson"
-    photo: "images/team/daniel-johnson.jpg"
-
-  - name: "Alex Wang, BS"
-    role: "Fourth Year Medical Student, Pritzker School of Medicine"
-    slug: "alex-wang"
-    photo: "images/team/wang_alex_2-sm_cropped.jpg"
-
   - name: "Olivia Christensen, BS"
     role: "Third Year Medical Student"
     description: "Kidney transplant access research."
@@ -93,12 +83,6 @@ trainees:
     role: "Second Year Medical Student, Pritzker School of Medicine"
     slug: "caleb-diaz"
 
-  - name: "Sukanya Ghosh"
-    role: "Undergraduate Research Assistant, University of Illinois at Chicago"
-    description: "Research on organ accept/reject practices."
-    slug: "sukanya-ghosh"
-    photo: "images/team/sukanya-ghosh.jpg"
-
   - name: "Jenny Hu"
     role: "Summer Undergraduate Research Assistant, University of Chicago"
     slug: "jenny-hu"
@@ -110,6 +94,22 @@ trainees:
     photo: "images/team/christian-ramos.jpg"
 
 alumni:
+  - name: "Daniel Johnson, BA"
+    role: "Fourth Year Medical Student, Pritzker School of Medicine"
+    slug: "daniel-johnson"
+    photo: "images/team/daniel-johnson.jpg"
+
+  - name: "Alex Wang, BS"
+    role: "Fourth Year Medical Student, Pritzker School of Medicine"
+    slug: "alex-wang"
+    photo: "images/team/wang_alex_2-sm_cropped.jpg"
+
+  - name: "Sukanya Ghosh"
+    role: "Undergraduate Research Assistant, University of Illinois at Chicago"
+    description: "Research on organ accept/reject practices."
+    slug: "sukanya-ghosh"
+    photo: "images/team/sukanya-ghosh.jpg"
+
   - name: "Stratton Tolmie, MD"
     role: "Internal Medicine Resident, Columbia University"
     slug: "stratton-tolmie"
