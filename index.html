@@ -116,48 +116,20 @@ permalink: /index.html
     </div>
   </section>
 
-  <!-- Research Areas (image only, linked to research page) -->
+  <!-- Research Areas -->
   <section class="section section-alt" aria-label="Research areas">
     <div class="container">
       <h2 class="section-title">Research Areas</h2>
       <p class="section-subtitle">Our work spans three interconnected domains of scarce healthcare resource allocation.</p>
-      <a href="research.html">
-        <img src="images/heart.png" alt="Research areas: Deceased donor organs, Initial supply of novel therapeutics, Life-support during Crisis Standards of Care" class="research-banner">
-      </a>
+      {% include research_rows.html %}
     </div>
   </section>
 
-  <!-- Research Spotlights -->
+  <!-- Key Publications -->
   {% if site.data.spotlights.spotlights.size > 0 %}
-  <section class="section" aria-label="Research spotlights">
+  <section class="section" aria-label="Key publications">
     <div class="container">
-      <h2 class="section-title" style="text-align:center;">Research Spotlights</h2>
-      <p class="section-subtitle" style="text-align:center;">Featured publications from the lab</p>
-      <div class="research-spotlight-grid">
-        {% for spotlight in site.data.spotlights.spotlights %}
-        <div class="research-spotlight-card">
-          {% if spotlight.image %}
-          <img src="{{ spotlight.image | relative_url }}" alt="{{ spotlight.title }}" class="research-spotlight-image">
-          {% endif %}
-          <div class="research-spotlight-content">
-            {% if spotlight.journal_logo %}
-            <img src="{{ spotlight.journal_logo | relative_url }}" alt="Journal logo" class="research-spotlight-journal-logo">
-            {% endif %}
-            <h3>{{ spotlight.title }}</h3>
-            <p>{{ spotlight.abstract }}</p>
-            {% if spotlight.citation %}
-            <p class="research-spotlight-citation">
-              {% if spotlight.doi %}
-              <a href="https://doi.org/{{ spotlight.doi }}" target="_blank" rel="noopener">{{ spotlight.citation }}</a>
-              {% else %}
-              {{ spotlight.citation }}
-              {% endif %}
-            </p>
-            {% endif %}
-          </div>
-        </div>
-        {% endfor %}
-      </div>
+      {% include key_publications.html %}
     </div>
   </section>
   {% endif %}

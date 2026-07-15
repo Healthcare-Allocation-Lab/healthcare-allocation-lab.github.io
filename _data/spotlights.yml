@@ -1,5 +1,6 @@
 spotlights:
 - id: slow-life-support
+  section: crisis-standards
   title: Slow Life Support for Imminently Dying Patients
   image: images/spotlights/slow_life_support.png
   journal_logo: images/journals/jama.svg
@@ -9,6 +10,7 @@ spotlights:
   citation: Vollbrecht H, Iwashyna TJ, et al. JAMA. 2026.
   doi: 10.1001/jama.2026.8659
 - id: lvad-utilization-selection-bias
+  section: organ-allocation
   title: 'Artifactual Declines in Durable LVAD Utilization Among Heart Transplant
     Candidates: Selection Bias in Transplant Registries'
   image: images/spotlights/lvad_selection_bias.png
@@ -20,6 +22,7 @@ spotlights:
   citation: Ahn DJ, Lyden GR, et al. J Heart Lung Transplant. 2026.
   doi: 10.1016/j.healun.2026.06.002
 - id: pediatric-heart-status-exceptions-2026
+  section: organ-allocation
   title: Status Exceptions and Misalignment of Medical Urgency in U.S. Pediatric Heart
     Transplantation
   image: images/spotlights/pediatric_heart_status_exceptions.png
@@ -31,6 +34,7 @@ spotlights:
   citation: Ahn DJ, Attia A, et al. J Am Coll Cardiol. 2026.
   doi: 10.1016/j.jacc.2026.01.052
 - id: clif-consortium
+  section: key-publications
   title: Common Longitudinal ICU Data Format (CLIF)
   image: images/spotlights/clif_map.png
   journal_logo: images/journals/icm_logo.jpeg
@@ -41,6 +45,7 @@ spotlights:
   pmid: '40080116'
   evergreen: true
 - id: heart-allocation-risk-score
+  section: key-publications
   title: United States Candidate Risk Score (US-CRS) for Predicting Death Without
     Transplant in Adult Heart Transplant Candidates
   image: images/spotlights/us_crs_auroc.png
@@ -52,6 +57,7 @@ spotlights:
   pmid: '38170510'
   evergreen: true
 - id: transplant-center-survival-benefit
+  section: key-publications
   title: Association of Transplant Center With Survival Benefit Among Adults Undergoing
     Heart Transplant in the United States
   image: images/spotlights/transplant_center_survival_benefit.png
@@ -63,3 +69,51 @@ spotlights:
   doi: 10.1001/jama.2019.15686
   pmid: '31714985'
   evergreen: true
+- id: heart-allocation-2018-survival-benefit
+  section: organ-allocation
+  image: images/spotlights/tolmie_survival_benefit.png
+  title: Association of the 2018 U.S. Heart Allocation Policy Change and the Survival
+    Benefit of Heart Transplantation
+  journal_logo: images/journals/JACC_logo.jpg
+  abstract: Using national registry data, this study evaluates how the 2018 U.S. heart
+    allocation policy change affected the survival benefit of heart transplantation,
+    comparing outcomes with and without transplant before and after the policy took
+    effect.
+  citation: Tolmie SB, Gibbons RD, et al. JACC Heart Fail. 2025;13(7):102480.
+  doi: 10.1016/j.jchf.2025.02.026
+- id: chicago-vaccination-inequity
+  section: scarce-therapeutics
+  image: images/spotlights/chicago_vaccination_map.png
+  title: Association of Zip Code Vaccination Rate With COVID-19 Mortality in Chicago,
+    Illinois
+  journal_logo: images/journals/jama.svg
+  abstract: Chicago zip codes with the lowest COVID-19 vaccination rates were predominantly
+    Black and Hispanic and suffered the highest COVID-19 mortality. Modeling suggests
+    equitable vaccine distribution could have prevented a substantial share of deaths
+    during the Alpha and Delta waves.
+  citation: Zeng S, Pelzer KM, et al. JAMA Netw Open. 2022;5(5):e2214753.
+  doi: 10.1001/jamanetworkopen.2022.14753
+- id: principles-to-protocols
+  section: scarce-therapeutics
+  title: 'Errors in Converting Principles to Protocols: Where the Bioethics of U.S.
+    Covid-19 Vaccine Allocation Went Wrong'
+  journal_logo: images/journals/hastings_logo.jpeg
+  abstract: The ACIP's COVID-19 vaccine allocation recommendations were internally
+    inconsistent with its own ethical principles - overly broad healthcare worker priority,
+    age as the sole high-risk criterion, no place-based distribution, and implicit
+    first-come, first-served allocation. Rigorous empirical work and a complete ethical
+    framework could have prevented these mistakes and saved lives.
+  citation: Parker WF, Persad G, Peek ME. Hastings Cent Rep. 2022;52(5):8-14.
+  doi: 10.1002/hast.1416
+- id: state-ventilator-guidelines
+  section: crisis-standards
+  image: images/spotlights/state_ventilator_guidelines.png
+  title: Variation in Ventilator Allocation Guidelines by US State During the Coronavirus
+    Disease 2019 Pandemic
+  journal_logo: images/journals/jama.svg
+  abstract: A systematic review of state ventilator allocation guidelines during the
+    COVID-19 pandemic found only half of US states had public guidance, with substantial
+    variation in triage criteria; most guidelines recommended objective clinical scoring
+    systems for rationing decisions.
+  citation: Piscitello GM, Kapania EM, et al. JAMA Netw Open. 2020;3(6):e2012606.
+  doi: 10.1001/jamanetworkopen.2020.12606

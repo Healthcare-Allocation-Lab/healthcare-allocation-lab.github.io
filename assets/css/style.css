@@ -1419,3 +1419,55 @@ a.member-card-linked .card-link::after { content: " \2192"; }
   .pi-card { padding: 24px; }
   .contact-grid { grid-template-columns: 1fr; }
 }
+
+/* ===== Research rows (research areas + spotlight tiles) ===== */
+.research-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 40px;
+  margin: 48px 0;
+}
+.research-row-image {
+  flex: 0 0 300px;
+  position: sticky;
+  top: 96px;
+}
+.research-row-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.research-row-content {
+  flex: 1;
+  min-width: 0;
+}
+.research-row-content h2 {
+  color: var(--maroon);
+  margin-bottom: 20px;
+}
+.research-row-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 24px;
+}
+.research-row-cards:empty {
+  display: none;
+}
+.research-row-pubs {
+  margin-top: 24px;
+}
+.research-row-full {
+  margin: 48px 0 0;
+}
+@media (max-width: 800px) {
+  .research-row {
+    flex-direction: column;
+    gap: 24px;
+  }
+  .research-row-image {
+    position: static;
+    flex: none;
+    max-width: 320px;
+    margin: 0 auto;
+  }
+}
