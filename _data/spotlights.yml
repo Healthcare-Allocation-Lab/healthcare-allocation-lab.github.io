@@ -69,6 +69,18 @@ spotlights:
   doi: 10.1001/jama.2019.15686
   pmid: '31714985'
   evergreen: true
+- id: adi-heart-transplant
+  section: organ-allocation
+  title: The Association of Place-Based Disadvantage and Access to Deceased Donor
+    Heart Transplantation
+  image: images/spotlights/adi_heart_transplant.png
+  journal_logo: images/journals/ajt.svg
+  abstract: Area deprivation index (ADI) was associated with heart transplantation
+    to a greater extent than other place-based disadvantage indices studied. The forthcoming
+    continuous distribution provides an opportunity to incorporate ADI to address
+    disparities in heart transplantation.
+  citation: Wang AZ, Barrett K, et al. Am J Transplant. 2025.
+  doi: 10.1016/j.ajt.2025.09.013
 - id: heart-allocation-2018-survival-benefit
   section: organ-allocation
   image: images/spotlights/tolmie_survival_benefit.png
