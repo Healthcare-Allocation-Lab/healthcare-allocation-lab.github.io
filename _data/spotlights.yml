@@ -87,10 +87,12 @@ spotlights:
   title: Association of the 2018 U.S. Heart Allocation Policy Change and the Survival
     Benefit of Heart Transplantation
   journal_logo: images/journals/JACC_logo.jpg
-  abstract: Using national registry data, this study evaluates how the 2018 U.S. heart
-    allocation policy change affected the survival benefit of heart transplantation,
-    comparing outcomes with and without transplant before and after the policy took
-    effect.
+  abstract: In 2018, the U.S. heart allocation policy underwent a major change designed
+    to increase transplantation of the most medically urgent candidates. The policy
+    change has indeed led to better stratification and prioritization of candidates
+    by clinical acuity, resulting in higher survival benefit of transplantation performed.
+    Combined with higher transplantation rates, the 2018 heart allocation policy has
+    saved thousands of life-years and achieved one of its major goals.
   citation: Tolmie SB, Gibbons RD, et al. JACC Heart Fail. 2025;13(7):102480.
   doi: 10.1016/j.jchf.2025.02.026
 - id: chicago-vaccination-inequity
