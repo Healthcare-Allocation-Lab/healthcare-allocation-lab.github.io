@@ -1,0 +1,8 @@
+{% assign spots = site.data.spotlights.spotlights %}
+<div class="research-row-full" id="key-publications">
+  <h2 class="section-title" style="text-align:center;">Key Publications</h2>
+  <p class="section-subtitle" style="text-align:center;">Foundational papers from the lab</p>
+  <div class="research-spotlight-grid">
+    {% for spotlight in spots %}{% if spotlight.section == 'key-publications' %}{% include spotlight_card.html spotlight=spotlight %}{% endif %}{% endfor %}
+  </div>
+</div>
