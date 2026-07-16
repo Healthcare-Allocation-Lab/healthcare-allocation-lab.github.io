@@ -1,5 +1,5 @@
 ---
-member_name: Alex Wang, BS
+member_name: Alex Wang, MD
 role: Fourth Year Medical Student, Pritzker School of Medicine
 slug: alex-wang
 photo: images/team/wang_alex_2-sm_cropped.jpg
