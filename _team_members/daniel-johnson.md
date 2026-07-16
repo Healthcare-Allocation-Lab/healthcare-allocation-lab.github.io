@@ -1,5 +1,5 @@
 ---
-member_name: Daniel Johnson, BA
+member_name: Daniel Johnson, MD
 role: Fourth Year Medical Student, Pritzker School of Medicine
 slug: daniel-johnson
 photo: images/team/johnson_daniel_2-sm_square.jpeg
