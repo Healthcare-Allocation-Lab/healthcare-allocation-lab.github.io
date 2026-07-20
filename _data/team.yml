@@ -94,12 +94,12 @@ trainees:
     photo: "images/team/christian-ramos.jpg"
 
 alumni:
-  - name: "Daniel Johnson, BA"
+  - name: "Daniel Johnson, MD"
     role: "Fourth Year Medical Student, Pritzker School of Medicine"
     slug: "daniel-johnson"
     photo: "images/team/daniel-johnson.jpg"
 
-  - name: "Alex Wang, BS"
+  - name: "Alex Wang, MD"
     role: "Fourth Year Medical Student, Pritzker School of Medicine"
     slug: "alex-wang"
     photo: "images/team/wang_alex_2-sm_cropped.jpg"
