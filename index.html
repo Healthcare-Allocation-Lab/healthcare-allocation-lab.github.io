@@ -116,23 +116,23 @@ permalink: /index.html
     </div>
   </section>
 
+  <!-- Key Publications -->
+  {% if site.data.spotlights.spotlights.size > 0 %}
+  <section class="section section-alt" aria-label="Key publications">
+    <div class="container">
+      {% include key_publications.html %}
+    </div>
+  </section>
+  {% endif %}
+
   <!-- Research Areas -->
-  <section class="section section-alt" aria-label="Research areas">
+  <section class="section" aria-label="Research areas">
     <div class="container">
       <h2 class="section-title">Research Areas</h2>
       <p class="section-subtitle">Our work spans three interconnected domains of scarce healthcare resource allocation.</p>
       {% include research_rows.html %}
     </div>
   </section>
-
-  <!-- Key Publications -->
-  {% if site.data.spotlights.spotlights.size > 0 %}
-  <section class="section" aria-label="Key publications">
-    <div class="container">
-      {% include key_publications.html %}
-    </div>
-  </section>
-  {% endif %}
 
   <!-- Publications (PubMed Widget - at bottom) -->
   <section class="section section-alt" aria-label="Publications">
