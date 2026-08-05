@@ -24,7 +24,7 @@ Dr. Parker and the HCA lab welcome applications from interested students or post
 
 The HCA Lab seeks MD or PhD post-doctoral fellows with training in healthcare data science, health policy, health services research, critical care medicine, transplantation, or medical ethics. Formal training opportunities include:
 
-1. The Siegler Clinical Medical Ethics fellowship
+1. [The Siegler or Full-time Clinical Medical Ethics fellowships](https://grad.uchicago.edu/fellowship/maclean-center-for-clinical-medical-ethics-fellowships/)
 2. Formal coursework in the Public Health Sciences and throughout the University of Chicago as an at-large graduate student
 3. T32 project development and grantwriting course
 
@@ -45,7 +45,7 @@ Include your CV, a brief description of your research interests, and any relevan
 
 ## Undergraduate or Medical Student Research Rotation
 
-We welcome undergraduate and medical students seeking experience in biostatistical research, particularly regarding organ allocation and healthcare resource distribution. Students in the lab conduct analysis of patient health data, create data visualizations, and co-author conference presentations and manuscripts.
+Every Summer Quarter we welcome undergraduate and medical students seeking experience in biostatistical research, particularly regarding organ allocation and healthcare resource distribution. Students in the lab conduct analysis of patient health data, create data visualizations, and co-author conference presentations and manuscripts.
 
 Dr. Parker is a participating research mentor in the following programs: Pritzker's Summer Research Program (SRP), the Biological Sciences Collegiate Division (BSCD) Summer Fellowship, and the Pritzker School of Medicine Experience in Research (PSOMER) program. Students in these formal programs will receive priority for our limited Research Assistantship slots in the lab, but others may apply individually via our application below. Compensation at the rate of minimum wage for up to 20 hours/week is available when grant funding allows.
 
@@ -60,7 +60,7 @@ Dr. Parker is a participating research mentor in the following programs: Pritzke
 
 - Basic statistics knowledge preferred
 - Experience with data analysis software (R or similar) preferred
-- Minimum 3-month commitment, ideally longer
+- Minimum four week commitment during the Summer Quarter for 20 hours per week
 
 ### Why Join
 
@@ -68,11 +68,11 @@ The lab has a strong track record of publishing work first-authored by medical s
 
 ### Apply
 
-To apply for an undergraduate or medical student research position, please complete our application form:
+To apply for an undergraduate or medical student research position, please complete our application form by April 1st at 11:59 pm CT.
 
-<a href="https://docs.google.com/forms/d/e/1FAIpQLScKoJ2OD2Zmgb1EOzjzpmWUDbMLcwg7XAmuQfOTaiBxD3U1wg/viewform?usp=sharing&ouid=109524889013036937393" class="apply-btn" target="_blank" rel="noopener">Open the application form &rarr;</a>
+<a href="https://docs.google.com/forms/d/e/1FAIpQLScKoJ2OD2Zmgb1EOzjzpmWUDbMLcwg7XAmuQfOTaiBxD3U1wg/viewform" class="apply-btn" target="_blank" rel="noopener">Open the application form &rarr;</a>
 
-**In addition, please email your CV/résumé to both:**
+**In addition, please email your CV/résumé and academic transcript (unofficial is ok) to both:**
 
 - **Haley Beck, MA** (Lab Manager) --- [haley.beck@bsd.uchicago.edu](mailto:haley.beck@bsd.uchicago.edu)
 - **William F. Parker, MD, PhD** --- [william.parker@bsd.uchicago.edu](mailto:william.parker@bsd.uchicago.edu)
