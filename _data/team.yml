@@ -74,6 +74,11 @@ trainees:
     role: "Summer Intern"
     description: "CS and DS double major at Purdue contributing to coding and data analysis for the CLIF Consortium at the Parker HCA Lab."
     slug: "kian-mokhlesi"
+
+  - name: "Dariush Mokhlesi, BS"
+    role: "Summer Intern"
+    description: "CS and DS double major at Purdue contributing to coding and data analysis for the CLIF Consortium at the Parker HCA Lab."
+    slug: "dariush-mokhlesi"
     
   - name: "Olivia Christensen, BS"
     role: "Third Year Medical Student"
