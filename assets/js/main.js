@@ -223,7 +223,7 @@ function initSpotlightLightbox() {
   images.forEach(function (img) {
     img.addEventListener('click', function (e) {
       e.stopPropagation();
-      openLightbox(img.src, img.alt);
+      openLightbox(img.getAttribute('data-full') || img.src, img.alt);
     });
   });
 
