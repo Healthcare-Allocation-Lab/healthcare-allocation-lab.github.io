@@ -48,7 +48,7 @@ spotlights:
   section: key-publications
   title: Development and Validation of an Adult Medical Urgency Score for US Donor
     Heart Allocation
-  image: images/spotlights/us_crs_matchrun.png
+  image: images/spotlights/us_crs_matchrun_panelA.png
   journal_logo: images/journals/jama.svg
   abstract: In this registry-based study of US heart transplant candidates, a US-CRS–based
     allocation system prioritized sicker candidates with higher mortality without
@@ -60,6 +60,8 @@ spotlights:
   doi: 10.1001/jama.2026.17403
   pmid: '42862588'
   evergreen: true
+  image_fit: contain
+  image_full: images/spotlights/us_crs_matchrun.png
 - id: transplant-center-survival-benefit
   section: key-publications
   title: Association of Transplant Center With Survival Benefit Among Adults Undergoing
