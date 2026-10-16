@@ -1,6 +1,6 @@
 <div class="research-spotlight-card">
   {% if include.spotlight.image %}
-  <img src="{{ include.spotlight.image | relative_url }}" alt="{{ include.spotlight.title }}" class="research-spotlight-image">
+  <img src="{{ include.spotlight.image | relative_url }}" alt="{{ include.spotlight.title }}" class="research-spotlight-image{% if include.spotlight.image_fit %} research-spotlight-image--{{ include.spotlight.image_fit }}{% endif %}"{% if include.spotlight.image_full %} data-full="{{ include.spotlight.image_full | relative_url }}"{% endif %}>
   {% endif %}
   <div class="research-spotlight-content">
     {% if include.spotlight.journal_logo %}
