@@ -44,17 +44,21 @@ spotlights:
   doi: 10.1007/s00134-025-07848-7
   pmid: '40080116'
   evergreen: true
-- id: heart-allocation-risk-score
+- id: us-crs-medical-urgency-score
   section: key-publications
-  title: United States Candidate Risk Score (US-CRS) for Predicting Death Without
-    Transplant in Adult Heart Transplant Candidates
-  image: images/spotlights/us_crs_auroc.png
+  title: Development and Validation of an Adult Medical Urgency Score for US Donor
+    Heart Allocation
+  image: images/spotlights/us_crs_matchrun.png
   journal_logo: images/journals/jama.svg
-  abstract: A new risk score for heart transplant candidates predicts mortality on
-    the waiting list, improving allocation beyond the current priority-tier system.
-  citation: Zhang KC, Narang N, et al. JAMA. 2024;331(3):237-247.
-  doi: 10.1001/jama.2023.27029
-  pmid: '38170510'
+  abstract: In this registry-based study of US heart transplant candidates, a US-CRS–based
+    allocation system prioritized sicker candidates with higher mortality without
+    transplant compared with the current medical urgency statuses. The US-CRS had
+    superior discrimination of 6-week mortality than the current 6-status system.
+    A match-run simulation indicated that integrating US-CRS into adult heart allocation
+    could reduce waitlist deaths without increasing distance for grafts to travel.
+  citation: Lyden GR, White M, et al. JAMA. 2026.
+  doi: 10.1001/jama.2026.17403
+  pmid: '42862588'
   evergreen: true
 - id: transplant-center-survival-benefit
   section: key-publications
